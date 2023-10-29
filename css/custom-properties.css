@@ -1,0 +1,29 @@
+:root {
+  /* Background Colours */
+  --primary-background-dark: #141323;
+  --primary-background-light: #FFFFFF;
+  --off-white-background: #EFEFEF;
+  --secondary-background: #AE8F59;
+
+  /* Text Colours */
+  --primary-dark-text: #141323;
+  --primary-light-text: #FFFFFF;
+  --secondary-text: #AE8F59;
+  --accent-text: #67A754;
+
+  /* Font */
+  --body-font: 'Roboto', sans-serif;
+
+  /* Font Size */
+  --headline: 4rem; /* 64px */
+  --page-title: 2.875rem; /* 46px */
+  --section-title-primary: 2.625rem; /* 42px */
+  --quote-text: 2.25rem; /* 36px */
+  --section-title-primary: 2rem; /* 32px */
+  --body-text: 1.125rem; /* 18px */
+
+  /* Font Weight */
+  --light-weight: 300;
+  --regular-weight: 400;
+  --bold-weight: 700;
+}

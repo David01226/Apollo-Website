@@ -60,6 +60,15 @@ header {overflow: hidden; display: flex; flex-direction: column; width: 100%; he
 .header__nav-link.selected {border-bottom: 2px solid var(--secondary-text);}
 .header__nav-link:hover {border-bottom: 2px solid var(--secondary-text);}
 
+/* Quote Section */
+.quote {width: 100%; margin-bottom: 80px;}
+.quote__wrapper {}
+.quote__text {width: 100%; text-align: center; font-size: var(--quote-text); font-weight: var(--light-weight); color: var(--primary-dark-text); margin-bottom: 15px; line-height: 1.4;}
+.quote__author {width: 100%; text-align: center; font-size: var(--author-text); font-weight: var(--bold-weight); color: var(--secondary-text);}
+
+
+
+
 /* Infinitate Carousel */
 @keyframes slide {
   from {

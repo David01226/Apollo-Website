@@ -17,6 +17,7 @@
 
   <!-- Components -->
   <script src="/js/components/header-nav.js" type="text/javascript" defer></script>
+  <script src="/js/components/service-selector.js" type="text/javascript" defer></script>
   <script src="/js/components/featured-panel.js" type="text/javascript" defer></script>
   <script src="/js/components/quote.js" type="text/javascript" defer></script>
   <script src="/js/components/infinite-carousel.js" type="text/javascript" defer></script>
@@ -24,16 +25,25 @@
 
 </head>
 <body>
-<header-nav></header-nav>
+  
+<!-- Header -->
+<header-nav
+  services="selected"
+  >
+</header-nav>
 
 <!-- Page Title -->
-
+<section class="title__container">
+  <div class="title__wrapper page-wrapper">
+    <h1>Services</h1>
+  </div>
+</section>
 
 <!-- Service Selector -->
-
+<service-selector></service-selector>
 
 <!-- Solar Installation Section -->
-<section id="solar">
+<section id="solar" class="content-section">
 
   <!-- Solar Intro -->
   <featured-panel 
@@ -72,7 +82,7 @@
     bodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu."
     btnStyle="btn-light"
     btn1Text="Enquire Now"
-    btn1Link="/pages/services.html"
+    btn1Link="/pages/contact.html"
     >
   </featured-panel>
 
@@ -95,11 +105,138 @@
 </section>
 
 <!-- Battery Storage Section -->
-<section id="battery"></section>
+<section id="battery" class="content-section hidden">
+    <!-- Battery Intro -->
+    <featured-panel 
+    sectionColor="transparent"
+    imgPosition="img-right"
+    img="/img/index/battery-panel.png"
+    imgSize="contain"
+    sectionTitle="Battery Storage"
+    bodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu."
+    btnStyle="btn-dark"
+    btn1Text="View Our Work"
+    btn1Link="/pages/our-work.html"
+    >
+  </featured-panel>
+
+  <!-- Battery Section -->
+  <featured-panel 
+    sectionColor="light"
+    imgPosition="img-right"
+    img="/img/index/about-panel.png"
+    sectionTitle="Battery Section"
+    bodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu."
+    btnStyle="btn-light"
+    btn1Text="Enquire Now"
+    btn1Link="/pages/contact.html"
+    >
+  </featured-panel>
+
+  <!-- Battery Section -->
+  <featured-panel 
+    sectionColor="dark"
+    imgPosition="img-left"
+    img="/img/index/solar-panel.png"
+    sectionTitle="Battery Section"
+    bodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu"
+    btnStyle="btn-dark"
+    btn1Text="Get a free quote"
+    btn1Link="/pages/contact.html"
+    >
+  </featured-panel>
+
+</section>
+
 <!-- Heat Pumps Section -->
-<section id="heat-pumps"></section>
+<section id="heat-pumps" class="content-section hidden">
+  <!-- Heat Pump Intro -->
+  <featured-panel 
+  sectionColor="transparent"
+  imgPosition="img-right"
+  img="/img/global/heat-pump.png"
+  imgSize="contain"
+  sectionTitle="Heat Pumps"
+  bodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu."
+  btnStyle="btn-dark"
+  btn1Text="View Our Work"
+  btn1Link="/pages/our-work.html"
+  >
+</featured-panel>
+
+<!-- Heat Pump Section -->
+<featured-panel 
+  sectionColor="light"
+  imgPosition="img-right"
+  img="/img/index/about-panel.png"
+  sectionTitle="Heat Pump Section"
+  bodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu."
+  btnStyle="btn-light"
+  btn1Text="Enquire Now"
+  btn1Link="/pages/contact.html"
+  >
+</featured-panel>
+
+<!-- Heat Pump Section -->
+<featured-panel 
+  sectionColor="dark"
+  imgPosition="img-left"
+  img="/img/index/solar-panel.png"
+  sectionTitle="Heat Pump Section"
+  bodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu"
+  btnStyle="btn-dark"
+  btn1Text="Get a free quote"
+  btn1Link="/pages/contact.html"
+  >
+</featured-panel>
+</section>
+
 <!-- Ventilation Section -->
-<section id="ventilation"></section>
+<section id="ventilation" class="content-section hidden">
+    <!-- Ventilation Intro -->
+    <featured-panel 
+    sectionColor="transparent"
+    imgPosition="img-right"
+    img="/img/global/ventilation.png"
+    imgSize="contain"
+    sectionTitle="Ventilation"
+    bodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu."
+    btnStyle="btn-dark"
+    btn1Text="View Our Work"
+    btn1Link="/pages/our-work.html"
+    >
+  </featured-panel>
+  
+  <!-- Ventilation Section -->
+  <featured-panel 
+    sectionColor="dark"
+    imgPosition="img-left"
+    img="/img/index/solar-panel.png"
+    sectionTitle="Ventilation Section"
+    bodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu"
+    btnStyle="btn-dark"
+    btn1Text="Get a free quote"
+    btn1Link="/pages/contact.html"
+    >
+  </featured-panel>
+
+  <!-- Ventilation Section -->
+  <featured-panel 
+    sectionColor="light"
+    imgPosition="img-right"
+    img="/img/index/about-panel.png"
+    sectionTitle="Ventilation Section"
+    bodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu."
+    btnStyle="btn-light"
+    btn1Text="Enquire Now"
+    btn1Link="/pages/contact.html"
+    >
+  </featured-panel>
+  
+</section>
 
 <infinite-carousel></infinite-carousel>
 <footer-nav></footer-nav>

@@ -1,6 +1,10 @@
 class Header extends HTMLElement {
   constructor() {
     super();
+    this.services = this.getAttribute('services');
+    this.ourWork = this.getAttribute('ourWork');
+    this.about = this.getAttribute('about');
+    this.contact = this.getAttribute('contact');
   }
 
   connectedCallback() {
@@ -40,10 +44,10 @@ class Header extends HTMLElement {
       </div>
         <div class="header__bottom">
           <div class="header__nav-container">
-              <a class="header__nav-link" href="/pages/services.html">Services</a>
-              <a class="header__nav-link" href="/pages/our-work.html">Our Work</a>
-              <a class="header__nav-link" href="/pages/about.html">About Us</a>
-              <a class="header__nav-link" href="/pages/contact.html">Contact</a>
+              <a class="header__nav-link ${this.services ? this.services : ''}" href="/pages/services.html">Services</a>
+              <a class="header__nav-link ${this.ourWork ? this.ourWork : ''}" href="/pages/our-work.html">Our Work</a>
+              <a class="header__nav-link ${this.about ? this.about : ''}" href="/pages/about.html">About Us</a>
+              <a class="header__nav-link ${this.contact ? this.contact : ''}" href="/pages/contact.html">Contact</a>
           </div>
         </div>
     </header>

@@ -2,6 +2,7 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *, 
@@ -70,8 +71,8 @@ header {overflow: hidden; display: flex; flex-direction: column; width: 100%; he
 
 
 /* Service Selector */
-.service-selector {background-color: var(--primary-background-light); margin-bottom: 80px;}
-.service-selector__wrapper {display: grid; grid-template-columns: repeat(4, 1fr); padding: 30px 0 20px 0;}
+.service-selector {background-color: var(--primary-background-light); margin-bottom: 50px;}
+.service-selector__wrapper {display: grid; grid-template-columns: repeat(3, 1fr); padding: 30px 0 20px 0; max-width: 1000px;}
 .service-selector__item-container {display: flex; justify-content: center; align-items: center;}
 .service-selector__item {display: flex; flex-direction: column; justify-content: space-around; align-items: center; gap: 20px; cursor: pointer;}
 .service-selector__item:hover svg, .service-selector__item:hover h3 {fill: var(--primary-dark-text); color: var(--primary-dark-text);}
@@ -81,8 +82,8 @@ header {overflow: hidden; display: flex; flex-direction: column; width: 100%; he
 .service-selector__item h3 {color: var(--secondary-text); text-align: center; font-size: var(--body-text); font-weight: var(--regular-weight); text-transform: uppercase; line-height: 1.4; letter-spacing: 0.9px;}
 
 
-/* Service Sections */
 .content-section.hidden {display: none;}
+.content-section {padding-top: 30px;}
 
 
 /* Featured Panel */

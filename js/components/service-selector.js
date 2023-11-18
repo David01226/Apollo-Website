@@ -71,8 +71,8 @@ class ServiceSelector extends HTMLElement {
           if (this.clickedBtn.getAttribute('data-id') === 'solar') {
             let main = new Splide( '#solar-splide' , {
               type: 'loop',
-              padding: '18rem',
-              fixedHeight: '500px',
+              padding: '22%',
+              height: '500px',
               gap: '10px',
               perPage: 1,
               arrows:true,
@@ -81,6 +81,12 @@ class ServiceSelector extends HTMLElement {
               pauseOnHover:false, 
               speed: 500,
               rewind: false,
+              breakpoints : {
+                1024: {
+                  padding: '5%',
+                  Height: '500px'
+                },
+              },
             });
       
             let thumbnails = new Splide( '#solar-thumbnail-slider', {
@@ -98,9 +104,9 @@ class ServiceSelector extends HTMLElement {
                 touch: 10,
               },
               breakpoints : {
-                640: {
-                  fixedWidth  : 66,
-                  fixedHeight : 38,
+                1024: {
+                  perPage: 5,
+                  fixedHeight : 90,
                 },
               },
             } );
@@ -112,8 +118,8 @@ class ServiceSelector extends HTMLElement {
           } else if (this.clickedBtn.getAttribute('data-id') === 'battery') {
             let main = new Splide( '#battery-splide' , {
               type: 'loop',
-              padding: '18rem',
-              fixedHeight: '500px',
+              padding: '22%',
+              height: '500px',
               gap: '10px',
               perPage: 1,
               arrows:true,
@@ -122,6 +128,12 @@ class ServiceSelector extends HTMLElement {
               pauseOnHover:false, 
               speed: 500,
               rewind: false,
+              breakpoints : {
+                1024: {
+                  padding: '5%',
+                  Height: '500px'
+                },
+              },
             });
   
             let thumbnails = new Splide( '#battery-thumbnail-slider', {
@@ -139,9 +151,9 @@ class ServiceSelector extends HTMLElement {
                 touch: 10,
               },
               breakpoints : {
-                640: {
-                  fixedWidth  : 66,
-                  fixedHeight : 38,
+                1024: {
+                  perPage: 5,
+                  fixedHeight : 90,
                 },
               },
             } );
@@ -152,8 +164,8 @@ class ServiceSelector extends HTMLElement {
           } else {
             let main = new Splide( '#ventilation-splide' , {
               type: 'loop',
-              padding: '18rem',
-              fixedHeight: '500px',
+              padding: '22%',
+              height: '500px',
               gap: '10px',
               perPage: 1,
               arrows:true,
@@ -162,6 +174,12 @@ class ServiceSelector extends HTMLElement {
               pauseOnHover:false, 
               speed: 500,
               rewind: false,
+              breakpoints : {
+                1024: {
+                  padding: '5%',
+                  Height: '500px'
+                },
+              },
             });
   
             let thumbnails = new Splide( '#ventilation-thumbnail-slider', {
@@ -179,9 +197,9 @@ class ServiceSelector extends HTMLElement {
                 touch: 10,
               },
               breakpoints : {
-                640: {
-                  fixedWidth  : 66,
-                  fixedHeight : 38,
+                1024: {
+                  perPage: 5,
+                  fixedHeight : 90,
                 },
               },
             } );

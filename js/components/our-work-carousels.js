@@ -9,7 +9,7 @@ class Carousel extends HTMLElement {
         <ul class="splide__list">
           ${this.images.map((img) => {
             return (`<li class="splide__slide"><img src="/img/our-work/${this.carouselID}/${img}" alt=""></li>`)
-            })}
+            }).join("")}
         </ul>
       </div>
     </section>
@@ -23,7 +23,7 @@ class Carousel extends HTMLElement {
         <ul class="splide__list">
         ${this.images.map((img) => {
           return (`<li class="splide__slide"><img src="/img/our-work/${this.carouselID}/${img}" alt=""></li>`)
-          })}
+          }).join("")}
         </ul>
       </div>
     </section>
@@ -34,8 +34,8 @@ class Carousel extends HTMLElement {
   
     let main = new Splide( '#solar-splide' , {
         type: 'loop',
-        padding: '18rem',
-        fixedHeight: '500px',
+        padding: '22%',
+        height: '500px',
         gap: '10px',
         perPage: 1,
         arrows:true,
@@ -44,6 +44,12 @@ class Carousel extends HTMLElement {
         pauseOnHover:false, 
         speed: 500,
         rewind: false,
+        breakpoints : {
+          1024: {
+            padding: '5%',
+            Height: '500px'
+          },
+        },
       });
 
       let thumbnails = new Splide( '#solar-thumbnail-slider', {
@@ -61,9 +67,9 @@ class Carousel extends HTMLElement {
           touch: 10,
         },
         breakpoints : {
-          640: {
-            fixedWidth  : 66,
-            fixedHeight : 38,
+          1024: {
+            perPage: 5,
+            fixedHeight : 90,
           },
         },
       } );

@@ -1,0 +1,17 @@
+/* Meet the team */
+.meet-the-team {width: 100%; margin-bottom: 80px;}
+.meet-the-team__wrapper {display: flex; flex-direction: column; align-items: center;}
+.meet-the-team__section-title {text-transform: uppercase; margin-bottom: 30px; font-size: var(--section-title-primary); font-weight: var(--regular-weight);letter-spacing: 3px; text-align: center; margin-bottom: 60px;}
+.meet-the-team__person-container {display: grid; grid-template-columns: repeat(4, 1fr); gap: 60px;}
+.meet-the-team__person {width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: flex-start;}
+.meet-the-team__person img {width: 100%; margin-bottom: 10px;}
+.meet-the-team__person .name {margin: 0 0 4px; font-weight: 100; text-align: center;}
+.meet-the-team__person .role {margin: 0; font-weight: 600; text-align: center;}
+
+@media only screen and (max-width: 1024px) {
+  .meet-the-team__person-container {grid-template-columns: repeat(3, 1fr); gap: 30px;}
+}
+
+@media only screen and (max-width: 767px) {
+  .meet-the-team__person-container {grid-template-columns: repeat(2, 1fr); gap: 20px;}
+}

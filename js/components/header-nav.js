@@ -14,7 +14,7 @@ class Header extends HTMLElement {
         <div class="header__top">
           <img class="header__absolute-logo" src="/img/global/apollo_logo_background_decor.png" alt="">
           <div class="header__top-left">
-            <a class="header__homepage-link" href="/pages/index.html">
+            <a class="header__homepage-link" href="/index.html">
               <img src="/img/global/apollo_logo_dark_desktop.png" alt="Apollo Logo">
             </a>
           </div>
@@ -39,10 +39,10 @@ class Header extends HTMLElement {
       </div>
         <div class="header__bottom">
           <div class="header__nav-container">
-              <a class="header__nav-link ${this.services ? this.services : ''}" href="/pages/services.html">Services</a>
-              <a class="header__nav-link ${this.ourWork ? this.ourWork : ''}" href="/pages/our-work.html">Our Work</a>
-              <a class="header__nav-link ${this.about ? this.about : ''}" href="/pages/about.html">About Us</a>
-              <a class="header__nav-link ${this.contact ? this.contact : ''}" href="/pages/contact.html">Contact</a>
+              <a class="header__nav-link ${this.services ? this.services : ''}" href="/services.html">Services</a>
+              <a class="header__nav-link ${this.ourWork ? this.ourWork : ''}" href="/our-work.html">Our Work</a>
+              <a class="header__nav-link ${this.about ? this.about : ''}" href="/about.html">About Us</a>
+              <a class="header__nav-link ${this.contact ? this.contact : ''}" href="/contact.html">Contact</a>
           </div>
         </div>
     </header>

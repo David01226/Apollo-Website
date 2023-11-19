@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apollo | Contact</title>
+  <title>Apollo | About</title>
 
   <!-- Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,28 +16,45 @@
 
   <!-- Components -->
   <script src="/js/components/header-nav.js" type="text/javascript" defer></script>
+  <script src="/js/components/featured-panel.js" type="text/javascript" defer></script>
   <script src="/js/components/usp.js" type="text/javascript" defer></script>
+  <script src="/js/components/quote.js" type="text/javascript" defer></script>
   <script src="/js/components/infinite-carousel.js" type="text/javascript" defer></script>
   <script src="/js/components/footer-nav.js" type="text/javascript" defer></script>
 
 </head>
-<body id="contact-page">
+<body id="about-page">
 
 <!-- Header -->
 <header-nav
-  contact="selected"
+  about="selected"
   >
 </header-nav>
 
 <!-- Page Title -->
 <section class="title__container">
   <div class="title__wrapper page-wrapper">
-    <h1>Contact</h1>
+    <h1>About Apollo</h1>
   </div>
 </section>
 
-<!-- Contact Form??? -->
+<!-- What We Do -->
+<featured-panel 
+  sectionColor="light"
+  imgPosition="img-right"
+  img="/img/index/about-panel.png"
+  sectionTitle="WHAT WE DO"
+  bodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu."
+  btnStyle="btn-light"
+  btn1Text="Our Services"
+  btn1Link="/services.html"
+  btn2Text="View Our Work"
+  btn2Link="/our-work.html"
+  >
+</featured-panel>
 
+<!-- Quote -->
+<quote-section quote="At Apollo our mission is to enable homeowners and businesses to unlock their energy independence and work towards a greener, more cost effective future. We are passionate about the services we offer and strive for excellence with every client we work with." author="- Luke (Managing Director)"></quote-section>
 
 <!-- Why Choose Us? -->
 <usp-panel
@@ -77,8 +93,15 @@
       "body": ""
     }
   ]'
+  btnStyle="btn-dark"
+  btnText="Find Out More"
+  btnLink="/services.html"
   >
 </usp-panel>
+
+
+<!-- Meet The Team -->
+
 
 <!-- Follow Our Instagram -->
 <section class="instagram">
@@ -98,7 +121,7 @@
               <img src="/img/global/insta4.png" alt="">
           </div>
       </div>
-      <a href="" class="btn btn-light">View Latest Projects</a>
+      <a href="https://www.instagram.com/apollo_renewable_installations/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" class="btn btn-light">View Latest Projects</a>
   </div>
 </section>
 

@@ -9,3 +9,13 @@
 .hero-splide__btn-container {display: flex; align-items: center; justify-content: flex-start; gap: 20px;}
 .splide__slide {width: 100%;}
 .splide__slide img {width: 100%;}
+
+/* How Can We Help */
+.help-section {width: 100%; margin-bottom: 80px;}
+.help-section__wrapper {}
+.help-section__title {text-align: center; color: var(--primary-dark-text); text-transform: uppercase; margin-bottom: 30px; font-size: var(--section-title-primary); font-weight: var(--regular-weight); letter-spacing: 3px; margin-bottom: 40px;}
+.help-section__card-container {width: 100%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;}
+.help-section__card {display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; background-color: var(--primary-background-light); padding: 30px; border-radius: 10px; gap: 20px}
+.help-section__card-title {font-size: 1.4rem; font-weight: 400; margin-bottom: 0; text-transform: uppercase;}
+.help-section__card-img {width: 100%;}
+.help-section__card-body {}

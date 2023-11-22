@@ -83,8 +83,8 @@ class ServiceSelector extends HTMLElement {
               rewind: false,
               breakpoints : {
                 1024: {
-                  padding: '5%',
-                  Height: '500px'
+                  padding: '10%',
+                  height: '55vw'
                 },
               },
             });
@@ -130,8 +130,8 @@ class ServiceSelector extends HTMLElement {
               rewind: false,
               breakpoints : {
                 1024: {
-                  padding: '5%',
-                  Height: '500px'
+                  padding: '10%',
+                  height: '55vw'
                 },
               },
             });
@@ -176,8 +176,8 @@ class ServiceSelector extends HTMLElement {
               rewind: false,
               breakpoints : {
                 1024: {
-                  padding: '5%',
-                  Height: '500px'
+                  padding: '10%',
+                  height: '55vw'
                 },
               },
             });

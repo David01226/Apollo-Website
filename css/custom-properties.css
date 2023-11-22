@@ -21,6 +21,14 @@
   --author-text: 1.625rem; /* 26px */
   --section-title-primary: 2rem; /* 32px */
   --body-text: 1rem; /* 18px */
+  
+  @media only screen and (max-width: 1024px) {
+    --headline: 2.5rem; /* 40px */
+    --page-title: 1.625rem; /* 26px */
+    --section-title-primary: 1.5rem; /* 24px */
+    --quote-text: 1.5rem; /* 24px */
+    --author-text: 1.375rem; /* 22px */
+  }
 
   /* Font Weight */
   --light-weight: 300;

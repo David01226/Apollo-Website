@@ -15,7 +15,7 @@ class InfiniteCarousel extends HTMLElement {
         }
       }
 
-      .infinite-carousel__title {text-transform: uppercase; padding: 40px 0 0; margin: 0; background-color: var(--primary-background-light); text-align: center;}
+      .infinite-carousel__title {font-weight: 400; font-size: 16px; text-transform: uppercase; padding: 40px 0 0; margin: 0; background-color: var(--primary-background-light); text-align: center;}
       .infinite-carousel__container {overflow: hidden; white-space: nowrap; display: flex; background-color: var(--primary-background-light);}
       .infinite-carousel__img-wrapper {display: flex; align-items: center; margin: 40px 0; animation: 60s slide infinite linear; flex-shrink: 0; animation-delay: 3s;}
       .infinite-carousel__img {padding: 0 20px; max-height: 80px;}

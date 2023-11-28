@@ -49,6 +49,10 @@ class Carousel extends HTMLElement {
             padding: '10%',
             height: '55vw'
           },
+          767: {
+            padding: '0',
+            height: '74vw'
+          }
         },
       });
 
@@ -71,6 +75,10 @@ class Carousel extends HTMLElement {
             perPage: 5,
             fixedHeight : 90,
           },
+          767: {
+            perPage: 3,
+            fixedHeight : 80,
+          }
         },
       } );
 

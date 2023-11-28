@@ -20,3 +20,12 @@
   .splide__arrow--next {right: 0.5em!important;}
   .splide__arrow--prev {left: 0.5em!important;}
 }
+
+@media only screen and (max-width: 767px) {
+  .splide__arrow {height: 3.5em!important; width: 3.5em!important;}
+  #our-work-page .content-section.page-wrapper {padding: 0;}
+  #our-work-page .content-section.page-wrapper h2 {padding: 0 25px;}
+  #solar-thumbnail-slider, 
+  #battery-thumbnail-slider,
+  #ventilation-thumbnail-slider {padding: 0 25px;}
+}

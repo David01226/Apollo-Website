@@ -15,6 +15,17 @@
   .hero-splide__text-container {padding-top: 3%;}
 }
 
+@media only screen and (max-width: 767px) {
+  #hero-splide {height: 66vw; margin-bottom: 110px;}
+  .splide__track {height: 100%;}
+  .splide__slide img {height: 100%; object-fit: cover;}
+  .hero-splide__heading-container {padding: 12px 18px; margin-bottom: 43%;}
+  .hero-splide__btn-container {flex-direction: column; gap: 6px;}
+  .hero-splide__text-container {padding-top: 0; top: unset; bottom: -64px; height: 100%; display: flex; align-items: flex-end;}
+  .hero-splide__heading-container h3 {font-size: 20px;}
+  .hero-splide__heading-container h2 {font-size: 25px;}
+}
+
 /* How Can We Help */
 .help-section {width: 100%; margin-bottom: 80px;}
 .help-section__wrapper {}
@@ -32,4 +43,8 @@
   .help-section__card-title {font-size: 1.2rem;}
   .help-section__card-container {gap: 10px; }
   .help-section__card {padding: 20px 15px; gap: 20px; justify-content: flex-start;}
+}
+@media only screen and (max-width: 767px) {
+  .help-section__title {margin-bottom: 20px;}
+  .help-section__card-container {grid-template-columns: repeat(1, 1fr);}
 }

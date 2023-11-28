@@ -29,6 +29,14 @@
     --quote-text: 1.5rem; /* 24px */
     --author-text: 1.375rem; /* 22px */
   }
+  
+  @media only screen and (max-width: 767px) {
+    --headline: 2rem; /* 32px */
+    --page-title: 1.5rem; /* 24px */
+    --section-title-primary: 1.375rem; /* 22px */
+    --quote-text: 1.25rem; /* 20px */
+    --author-text: 1rem; /* 18px */
+  }
 
   /* Font Weight */
   --light-weight: 300;

@@ -28,4 +28,9 @@
   #solar-thumbnail-slider, 
   #battery-thumbnail-slider,
   #ventilation-thumbnail-slider {padding: 0 25px;}
+  #solar-thumbnail-slider .splide__slide.is-active, 
+  #battery-thumbnail-slider .splide__slide.is-active, 
+  #ventilation-thumbnail-slider .splide__slide.is-active {
+    border: 4px solid var(--secondary-background)!important;
+  }
 }

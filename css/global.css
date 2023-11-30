@@ -171,6 +171,7 @@ header {overflow: hidden; display: flex; flex-direction: column; width: 100%; he
   .featured-panel__title {margin-bottom: 20px;}
   .featured-panel__wrapper {flex-direction: column-reverse;}
   .featured-panel__img-container {position: relative; width: 100%;}
+  .featured-panel__img-container img {width: 100%; height: unset; object-fit: contain;}
   .contain .featured-panel__img-container {position: relative; width: 100%;}
   .featured-panel__text-container {width: 100%; padding: 25px;}
   .featured-panel__wrapper.page-wrapper {padding: 0}

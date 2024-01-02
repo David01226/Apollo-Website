@@ -56,8 +56,11 @@ class Header extends HTMLElement {
                 <a class="header__nav-link ${this.solarPower ? this.solarPower : ''}" href="/services/solar-power.html">Solar Power</a>
                 <div class="header__nav-link-line"></div>
                 <ul class="header__dropdown">
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/solar-power.html#residential-solar">Residential Solar</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/solar-power.html#commercial-solar">Commercial Solar</a></li>
                   <li class="dropdown-li"><a class="header__dropdown-link" href="/services/solar-power.html#benefits-of-solar">Benefits of Solar</a></li>
-                </ul>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/solar-power.html#solar-suitable">Are Solar Panels For Me?</a></li>
+                  </ul>
               </li>
               <li class="main-li">
                 <a class="header__nav-link ${this.services ? this.services : ''}" href="/services/">Services</a>
@@ -78,11 +81,11 @@ class Header extends HTMLElement {
                 <a class="header__nav-link ${this.products ? this.products : ''}" href="/product">Products</a>
                 <div class="header__nav-link-line"></div>
                 <ul class="header__dropdown">
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/products/solar-panels-products.html">Solar Panels</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/products/battery-storage-products.html">Commercial Solar</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/products/inverters.html">Battery Storage</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/products/optimisers.html">EV Chargers</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/products/mounting-systems.html">Ventilation</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/products/solar-panel-products.html">Solar Panels</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/products/battery-storage-products.html">Battery Storage</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/products/inverter-products.html">Inverters</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/products/optimiser-products.html">Optimisers</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/products/mounting-system-products.html">Mounting Systems</a></li>
                 </ul>
               </li>
               <li><a class="header__nav-link ${this.contact ? this.contact : ''}" href="/contact.html">Contact</a></li>

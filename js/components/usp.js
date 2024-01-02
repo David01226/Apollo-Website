@@ -20,7 +20,7 @@ class USP extends HTMLElement {
       .solar-suitable.usp__item-container {grid-template-columns: repeat(1, 1fr);}
     }
     </style>
-    <div class="usp__container ${this.sectionColor}">
+    <div ${this.sectionIdentifier ? `id="${this.sectionIdentifier}"` : '' } class="usp__container ${this.sectionColor}">
       <div class="usp__wrapper page-wrapper">
         <div class="usp__title-container">
           ${this.sectionTitle ? `<h2 class="usp__section-title">${this.sectionTitle}</h2>` : '' }

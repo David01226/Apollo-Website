@@ -1,6 +1,7 @@
 class FeaturedPanel extends HTMLElement {
   constructor() {
     super();
+    this.sectionID = this.getAttribute('sectionID');
     this.sectionColor = this.getAttribute('sectionColor');
     this.img = this.getAttribute('img')
     this.imgPosition = this.getAttribute('imgPosition');
@@ -16,10 +17,10 @@ class FeaturedPanel extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-    <div class="featured-panel ${this.imgPosition} ${this.imgSize} ${this.sectionColor}">
+    <div ${this.sectionID ? `id="${this.sectionID}"` : ''} class="featured-panel ${this.imgPosition} ${this.imgSize} ${this.sectionColor}">
     <div class="featured-panel__wrapper page-wrapper">
       <div class="featured-panel__text-container">
-          <h2 class="featured-panel__title">${this.sectionTitle}</h2>
+        ${this.sectionTitle ? `<h2 class="featured-panel__title">${this.sectionTitle}</h2>` : ''}
           <p class="featured-panel__body-text">${this.bodyText}</p>
 
         ${this.btn1Text ? 

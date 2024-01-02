@@ -12,7 +12,6 @@ class USP extends HTMLElement {
   }
 
   connectedCallback() {
-    console.log(this.sectionIdentifier)
     this.innerHTML = `
     <style>
     .${this.sectionIdentifier}.usp__item-container {grid-template-columns: repeat(${this.items.length}, 1fr);}

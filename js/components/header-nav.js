@@ -56,8 +56,6 @@ class Header extends HTMLElement {
                 <a class="header__nav-link ${this.solarPower ? this.solarPower : ''}" href="/services/solar-power.html">Solar Power</a>
                 <div class="header__nav-link-line"></div>
                 <ul class="header__dropdown">
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/solar-power.html#residential-solar">Residential Solar</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/solar-power.html#commercial-solar">Commercial Solar</a></li>
                   <li class="dropdown-li"><a class="header__dropdown-link" href="/services/solar-power.html#benefits-of-solar">Benefits of Solar</a></li>
                   <li class="dropdown-li"><a class="header__dropdown-link" href="/services/solar-power.html#solar-suitable">Are Solar Panels For Me?</a></li>
                   </ul>

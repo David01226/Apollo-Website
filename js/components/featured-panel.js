@@ -11,8 +11,10 @@ class FeaturedPanel extends HTMLElement {
     this.btnStyle = this.getAttribute('btnStyle')
     this.btn1Text = this.getAttribute('btn1Text');
     this.btn1Link = this.getAttribute('btn1Link');
+    this.btn1NewTab = this.getAttribute('btn1NewTab');
     this.btn2Text = this.getAttribute('btn2Text');
     this.btn2Link = this.getAttribute('btn2Link');
+    this.btn2NewTab = this.getAttribute('btn2NewTab');
   }
 
   connectedCallback() {
@@ -25,8 +27,8 @@ class FeaturedPanel extends HTMLElement {
 
         ${this.btn1Text ? 
           `<div class="featured-panel__btn-container">
-          ${this.btn1Text ? `<a class="btn ${this.btnStyle}" href="${this.btn1Link}">${this.btn1Text}</a>` : ''}
-          ${this.btn2Text ? `<a class="btn ${this.btnStyle}" href="${this.btn2Link}">${this.btn2Text}</a>` : ''}
+          ${this.btn1Text ? `<a class="btn ${this.btnStyle}" href="${this.btn1Link}" ${this.btn1NewTab ? `target="_blank"` : ''}>${this.btn1Text}</a>` : ''}
+          ${this.btn2Text ? `<a class="btn ${this.btnStyle}" href="${this.btn2Link}" ${this.btn2NewTab ? `target="_blank"` : ''}>${this.btn2Text}</a>` : ''}
           </div>`
         :
           ''

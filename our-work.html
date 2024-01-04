@@ -49,10 +49,49 @@
       <div class="mobile-nav__close-line right-line"></div>
     </div>
     <div class="mobile__nav__link-container">
-      <a class="mobile__nav-link" href="/services.html">Services</a>
-      <a class="mobile__nav-link" href="/our-work.html">Our Work</a>
-      <a class="mobile__nav-link" href="/about.html">About Us</a>
-      <a class="mobile__nav-link" href="/contact.html">Contact</a>
+      <div>
+        <a class="mobile__nav-link" href="/about.html">About Us</a>
+        <div class="mobile__nav-link-child-container">
+          <a class="mobile__nav-link-child" href="/about.html">What We Do &nbsp&nbsp|</a>
+          <a class="mobile__nav-link-child" href="/about.html">Our Values &nbsp&nbsp|</a>
+          <a class="mobile__nav-link-child" href="/about.html#our-team">Our Team &nbsp&nbsp|</a>
+          <a class="mobile__nav-link-child" href="/our-work.html">Our Work &nbsp&nbsp|</a>
+          <a class="mobile__nav-link-child" href="/about.html">Careers</a>
+        </div>
+      </div>
+      <div>
+        <a class="mobile__nav-link" href="/services/solar-power.html">Solar Power</a>
+        <div class="mobile__nav-link-child-container">
+          <a class="mobile__nav-link-child" href="/services/solar-power.html#benefits-of-solar">Benefits of Solar &nbsp&nbsp|</a>
+          <a class="mobile__nav-link-child" href="/services/solar-power.html#solar-suitable">Are Solar Panels For Me?</a>
+        </div>
+      </div>
+      <div>
+        <a class="mobile__nav-link" href="/services/">Services</a>
+        <div class="mobile__nav-link-child-container">
+          <a class="mobile__nav-link-child" href="/services/solar-power.html#residential-solar">Residential Solar &nbsp&nbsp|</a>
+          <a class="mobile__nav-link-child" href="/services/solar-power.html#commercial-solar">Commercial Solar &nbsp&nbsp|</a>
+          <a class="mobile__nav-link-child" href="/services/battery-storage.html">Battery Storage &nbsp&nbsp|</a>
+          <a class="mobile__nav-link-child" href="/services/ev-chargers.html">EV Chargers &nbsp&nbsp|</a>
+          <a class="mobile__nav-link-child" href="/services/ventilation.html">Ventilation</a>
+        </div>
+      </div>
+      <div>
+        <a class="mobile__nav-link" href="/services/ev-chargers.html">EV Chargers</a>
+      </div>
+      <div>
+        <a class="mobile__nav-link" href="/">Products</a>
+        <div class="mobile__nav-link-child-container">
+          <a class="mobile__nav-link-child" href="/products/solar-panel-products.html">Solar Panels &nbsp&nbsp|</a>
+          <a class="mobile__nav-link-child" href="/products/battery-storage-products.html">Battery Storage &nbsp&nbsp|</a>
+          <a class="mobile__nav-link-child" href="/products/inverter-products.html">Inverters &nbsp&nbsp|</a>
+          <a class="mobile__nav-link-child" href="/products/optimiser-products.html">Optimisers &nbsp&nbsp|</a>
+          <a class="mobile__nav-link-child" href="/products/mounting-system-products.html">Mounting Systems &nbsp&nbsp|</a>
+        </div>
+      </div>
+      <div>
+        <a class="mobile__nav-link" href="/contact.html">Contact</a>
+      </div>
     </div>
   </div>
   <div class="mobile-nav__wrapper page-wrapper">
@@ -69,6 +108,8 @@
     </div>
   </div>
 </section>
+
+<main id="main-content">
 
 <!-- Page Title -->
 <section class="title__container">
@@ -127,10 +168,29 @@
 </section>
 
 
-<!-- Heat Pumps Section -->
-<!-- <section id="heat-pumps" class="content-section hidden">
-<h3>Heat Pumps</h3>
-</section> -->
+<!-- EV Chargers Storage Section -->
+<section id="ev-chargers" class="content-section hidden page-wrapper">
+  <h2 class="featured-panel__title">EV Chargers</h2>
+  <our-work-carousel
+    carouselID="ev-chargers"
+    images='
+    ["battery(1).jpg",
+    "battery(2).jpg",
+    "battery(3).jpg",
+    "battery(4).jpg",
+    "battery(5).jpg",
+    "battery(6).jpg",
+    "battery(7).jpg",
+    "battery(8).jpg",
+    "battery(9).jpg",
+    "battery(10).jpg",
+    "battery(11).jpg",
+    "battery(12).jpg"
+    ]'
+    >
+  </our-work-carousel>
+</section>
+
 
 <!-- Ventilation Section -->
 <section id="ventilation" class="content-section hidden page-wrapper">
@@ -218,6 +278,8 @@
 
 <!-- Infinite Accreditation Carousel -->
 <infinite-carousel></infinite-carousel>
+
+</main>
 
 <!-- Footer -->
 <footer-nav></footer-nav>

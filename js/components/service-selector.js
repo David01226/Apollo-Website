@@ -23,7 +23,7 @@ class ServiceSelector extends HTMLElement {
             </div>
             <div class="service-selector__item-container">
               <a href="${this.servicePage === 'true' ? '/services/ev-chargers.html' : '#ev-chargers'}">
-                <div id="ev-charger-btn" class="service-selector__item" data-id="ev-charger">
+                <div id="ev-charger-btn" class="service-selector__item" data-id="ev-chargers">
                 <svg xmlns="http://www.w3.org/2000/svg" height="40" width="40" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M96 0C60.7 0 32 28.7 32 64V448c-17.7 0-32 14.3-32 32s14.3 32 32 32H320c17.7 0 32-14.3 32-32s-14.3-32-32-32V304h16c22.1 0 40 17.9 40 40v32c0 39.8 32.2 72 72 72s72-32.2 72-72V252.3c32.5-10.2 56-40.5 56-76.3V144c0-8.8-7.2-16-16-16H544V80c0-8.8-7.2-16-16-16s-16 7.2-16 16v48H480V80c0-8.8-7.2-16-16-16s-16 7.2-16 16v48H432c-8.8 0-16 7.2-16 16v32c0 35.8 23.5 66.1 56 76.3V376c0 13.3-10.7 24-24 24s-24-10.7-24-24V344c0-48.6-39.4-88-88-88H320V64c0-35.3-28.7-64-64-64H96zM216.9 82.7c6 4 8.5 11.5 6.3 18.3l-25 74.9H256c6.7 0 12.7 4.2 15 10.4s.5 13.3-4.6 17.7l-112 96c-5.5 4.7-13.4 5.1-19.3 1.1s-8.5-11.5-6.3-18.3l25-74.9H96c-6.7 0-12.7-4.2-15-10.4s-.5-13.3 4.6-17.7l112-96c5.5-4.7 13.4-5.1 19.3-1.1z"/></svg>
                   <h3>EV<br>Chargers</h3>
                 </div>
@@ -187,6 +187,61 @@ class ServiceSelector extends HTMLElement {
               main.sync( thumbnails );
               main.mount();
               thumbnails.mount();
+            } else if (this.clickedBtn.getAttribute('data-id') === 'ev-chargers') {
+              let main = new Splide( '#ev-chargers-splide' , {
+                type: 'loop',
+                padding: '22%',
+                height: '500px',
+                gap: '10px',
+                perPage: 1,
+                arrows:true,
+                pagination:false,
+                pauseOnFocus:false,
+                pauseOnHover:false, 
+                speed: 500,
+                rewind: false,
+                breakpoints : {
+                  1024: {
+                    padding: '10%',
+                    height: '55vw'
+                  },
+                  767: {
+                    padding: '0',
+                    height: '74vw'
+                  }
+                },
+              });
+    
+              let thumbnails = new Splide( '#ev-chargers-thumbnail-slider', {
+                rewind          : true,
+                perPage: 8,
+                fixedHeight: 110,
+                isNavigation    : true,
+                gap             : 10,
+                focus           : 'center',
+                pagination      : false,
+                cover           : true,
+                arrows: false,
+                dragMinThreshold: {
+                  mouse: 4,
+                  touch: 10,
+                },
+                breakpoints : {
+                  1024: {
+                    perPage: 5,
+                    fixedHeight : 90,
+                  },
+                  767: {
+                    perPage: 3,
+                    fixedHeight : 80,
+                  }
+                },
+              } );
+    
+              main.sync( thumbnails );
+              main.mount();
+              thumbnails.mount();
+
             } else {
               let main = new Splide( '#ventilation-splide' , {
                 type: 'loop',

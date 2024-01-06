@@ -20,7 +20,6 @@
 }
 
 @media only screen and (max-width: 767px) {
-  #hero-splide {margin-bottom: 9vh;}
   .splide__slide img {height: 100%; object-fit: cover;}
   .hero-splide__heading-container {padding: 12px 18px;}
   .hero-splide__text-container {padding-top: 6%;}

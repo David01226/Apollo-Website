@@ -48,7 +48,7 @@ ul li {
 
 .fixed-background-logo-sun {pointer-events: none; position: absolute; top: -8%; left: -20%; z-index: -1; width: 60%; opacity: 8%;}
 @media only screen and (max-width: 767px) {
-  /* .fixed-background-logo-sun {display: none;} */
+  .fixed-background-logo-sun {display: none;}
 }
 
 
@@ -114,9 +114,6 @@ header {display: flex; flex-direction: column; width: 100%; height: 138px; backg
 
 .mobile-nav__btn {cursor: pointer; width: 30px; height: 20px;display: flex; flex-direction: column; align-items: center; justify-content: space-between; }
 .mobile-nav__btn .line {width: 100%; height: 2px; background-color: #FFF;}
-.mobile-nav__btn .line-top {}
-.mobile-nav__btn .line-middle {}
-.mobile-nav__btn .line-bottom {}
 .mobile-nav__logo {max-height: 50px;}
 .mobile-nav__background-decor {position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; pointer-events: none;}
 .mobile-nav__background-decor img {height: 100%;}
@@ -257,7 +254,6 @@ header {display: flex; flex-direction: column; width: 100%; height: 138px; backg
   .usp__item-body {padding: 0 5px;}
 }
 @media only screen and (max-width: 767px) {
-  .usp__title-container {}
   .usp__section-sub-title {font-size: 18px;}
   .usp__item-container {grid-template-columns: repeat(1, 1fr); gap: 40px;}
   .usp__item-body {font-size: 16px;}
@@ -268,7 +264,6 @@ header {display: flex; flex-direction: column; width: 100%; height: 138px; backg
 .quote {width: 100%; padding: 80px 0;}
 .quote.marginDesktop {margin-bottom: 80px;}
 .quote.has-bg-color {background-color: var(--primary-background-light);}
-.quote__wrapper {}
 .quote__text {width: 100%; text-align: center; font-size: var(--quote-text); font-weight: var(--light-weight); color: var(--primary-dark-text); margin-bottom: 15px; line-height: 1.4;}
 .quote__author {width: 100%; text-align: center; font-size: var(--author-text); font-weight: var(--bold-weight); color: var(--secondary-text);}
 
@@ -305,8 +300,6 @@ footer {width: 100%; height: 250px; background-color: var(--primary-background-d
 .footer__right {display: flex; flex-direction: column; align-items: flex-end; justify-content: center; gap: 10px;}
 .footer__homepage-link {display: flex;}
 .footer__homepage-link img {width: 280px;}
-.footer__logo {}
-.footer__logo img {}
 .footer__social-container {display: flex; justify-content: center; align-items: center; gap: 10px;}
 .footer__social-link {display: flex;}
 .footer__social-link svg {width: 35px; color: var(--primary-light-text); transition: all 0.1s linear;}

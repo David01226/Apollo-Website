@@ -21,8 +21,8 @@ class Header extends HTMLElement {
             </a>
           </div>
           <div class="header__top-right">
-            <a class="header__contact-number-link" href="tel:07788079874">
-              <div class="header__contact-number"><span>Call </span>0778 807 9874</div>
+            <a class="header__contact-number-link" href="tel:07725750573">
+              <div class="header__contact-number"><span>Call </span>07725 750573</div>
             </a>
             <div class="header__social-container">
               <a class="header__social-link" target="_blank" href="https://www.instagram.com/apollo_renewable_installations/?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr">

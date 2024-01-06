@@ -15,7 +15,7 @@
 @media only screen and (max-width: 1024px) {
   .mobile-hero {display: flex;}
   .desktop-hero {display: none;}
-  #hero-splide {height: calc(82vh - 80px);}
+  #hero-splide {height: calc(85vh - 80px);}
   .hero-splide__text-container {padding-top: 3%;}
 }
 

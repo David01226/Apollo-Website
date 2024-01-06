@@ -1,13 +1,16 @@
 .splide {cursor: grab;}
-#solar-splide, #battery-splide, #ventilation-splide {position: relative; margin-bottom: 20px;}
+#solar-splide, #battery-splide, #ventilation-splide, #ev-chargers-splide {position: relative; margin-bottom: 20px;}
 .splide__slide {width: 100%; display: flex; align-items: center; justify-content: center;}
 .splide__slide img {width: 100%; height: 100%; object-fit: cover;}
 #solar-thumbnail-slider,
 #battery-thumbnail-slider,
-#ventilation-thumbnail-slider {padding: 0;}
+#ventilation-thumbnail-slider,
+#ev-chargers-thumbnail-slider {padding: 0;}
 #solar-thumbnail-slider .splide__slide.is-active,
 #battery-thumbnail-slider .splide__slide.is-active, 
-#ventilation-thumbnail-slider .splide__slide.is-active {border: 8px solid var(--secondary-background)!important; opacity: 1;}
+#ventilation-thumbnail-slider .splide__slide.is-active,
+#ev-chargers-thumbnail-slider .splide__slide.is-active
+ {border: 8px solid var(--secondary-background)!important; opacity: 1;}
 .splide__slide.is-active {opacity: 1; filter: grayscale(0);}
 .splide__slide {opacity: 0.5; filter: grayscale(0.5);}
 .splide__arrow {height: 4em!important; width: 4em!important; background: var(--primary-background-dark)!important; border: 2px solid var(--secondary-background)!important;}
@@ -16,21 +19,26 @@
 .splide__arrow--prev {left: 3em!important;}
 .splide__arrow:hover:not(:disabled) {opacity: 1!important;}
 
+#our-work-page .content-section {margin-top: 80px;}
+
 @media only screen and (max-width: 1024px) {
+  #our-work-page .content-section {margin-top: 50px;}
   .splide__arrow--next {right: 0.5em!important;}
   .splide__arrow--prev {left: 0.5em!important;}
 }
 
 @media only screen and (max-width: 767px) {
   .splide__arrow {height: 3.5em!important; width: 3.5em!important;}
-  #our-work-page .content-section.page-wrapper {padding: 0;}
+  #our-work-page .content-section.page-wrapper {padding-left: 0; padding-right: 0;}
   #our-work-page .content-section.page-wrapper h2 {padding: 0 25px;}
   #solar-thumbnail-slider, 
   #battery-thumbnail-slider,
-  #ventilation-thumbnail-slider {padding: 0 25px;}
+  #ventilation-thumbnail-slider,
+  #ev-chargers-thumbnail-slider {padding: 0 25px;}
   #solar-thumbnail-slider .splide__slide.is-active, 
   #battery-thumbnail-slider .splide__slide.is-active, 
-  #ventilation-thumbnail-slider .splide__slide.is-active {
+  #ventilation-thumbnail-slider .splide__slide.is-active,
+  #ev-chargers-thumbnail-slider .splide__slide.is-active {
     border: 4px solid var(--secondary-background)!important;
   }
 }

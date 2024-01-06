@@ -2,6 +2,7 @@ class USP extends HTMLElement {
   constructor() {
     super();
     this.sectionIdentifier = this.getAttribute('sectionIdentifier');
+    this.sectionMarginClasses = this.getAttribute('sectionMarginClasses');
     this.sectionColor = this.getAttribute('sectionColor');
     this.sectionTitle = this.getAttribute('sectionTitle');
     this.sectionSubTitle = this.getAttribute('sectionSubTitle');
@@ -20,7 +21,7 @@ class USP extends HTMLElement {
       .solar-suitable.usp__item-container {grid-template-columns: repeat(1, 1fr);}
     }
     </style>
-    <div ${this.sectionIdentifier ? `id="${this.sectionIdentifier}"` : '' } class="usp__container ${this.sectionColor}">
+    <div ${this.sectionIdentifier ? `id="${this.sectionIdentifier}"` : '' } class="usp__container ${this.sectionColor} ${this.sectionMarginClasses ? `${this.sectionMarginClasses}` : ''}">
       <div class="usp__wrapper page-wrapper">
         <div class="usp__title-container">
           ${this.sectionTitle ? `<h2 class="usp__section-title">${this.sectionTitle}</h2>` : '' }

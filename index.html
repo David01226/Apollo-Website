@@ -18,6 +18,7 @@
 
   <!-- Components -->
   <script src="/js/components/header-nav.js" type="text/javascript" defer></script>
+  <script src="/js/components/service-selector.js" type="text/javascript" defer></script>
   <script src="/js/components/featured-panel.js" type="text/javascript" defer></script>
   <script src="/js/components/usp.js" type="text/javascript" defer></script>
   <script src="/js/components/quote.js" type="text/javascript" defer></script>
@@ -34,7 +35,8 @@
 </head>
 <body id="index-page">
 
-<img class="fixed-background-logo-sun" src="/img/global/apollo_sun_outline_gold.png" alt="">
+<!-- Background Logo -->
+<img class="fixed-background-logo-sun" style="top:64%; z-index: 1;" src="/img/global/apollo_sun_outline_gold.png" alt="">
 
 <!-- Header -->
 <header-nav></header-nav>
@@ -107,7 +109,7 @@
   </div>
 </section>
 
-<main id="main-content">
+<!-- <main id="main-content"> -->
 
   <!-- Homepage Hero -->
   <section id="hero-splide" class="splide" aria-label="Splide Basic HTML Example">
@@ -127,35 +129,56 @@
     <div class="splide__track">
       <ul class="splide__list">
         <li class="splide__slide">
-          <img src="/img/index/Hero1.png" alt="">
+          <img class="desktop-hero" src="/img/index/Hero1.jpg" alt="">
+          <img class="mobile-hero" src="/img/index/Hero1-mobile.jpg" alt="">
         </li>
         <li class="splide__slide">
-          <img src="/img/index/Hero2.png" alt="">
+          <img class="desktop-hero" src="/img/index/Hero2.jpg" alt="">
+          <img class="mobile-hero" src="/img/index/Hero2-mobile.jpg" alt="">
         </li>
         <li class="splide__slide">
-          <img src="/img/index/Hero3.png" alt="">
+          <img class="desktop-hero" src="/img/index/Hero3.jpg" alt="">
+          <img class="mobile-hero" src="/img/index/Hero3-mobile.jpg" alt="">
         </li>
         <li class="splide__slide">
-          <img src="/img/index/Hero4.png" alt="">
+          <img class="desktop-hero" src="/img/index/Hero4.jpg" alt="">
+          <img class="mobile-hero" src="/img/index/Hero4-mobile.jpg" alt="">
         </li>
         <li class="splide__slide">
-          <img src="/img/index/Hero5.png" alt="">
+          <img class="desktop-hero" src="/img/index/Hero5.jpg" alt="">
+          <img class="mobile-hero" src="/img/index/Hero5-mobile.jpg" alt="">
         </li>
         <li class="splide__slide">
-          <img src="/img/index/Hero6.png" alt="">
+          <img class="desktop-hero" src="/img/index/Hero6.jpg" alt="">
+          <img class="mobile-hero" src="/img/index/Hero6-mobile.jpg" alt="">
         </li>
         <li class="splide__slide">
-          <img src="/img/index/Hero7.png" alt="">
+          <img class="desktop-hero" src="/img/index/Hero7.jpg" alt="">
+          <img class="mobile-hero" src="/img/index/Hero7-mobile.jpg" alt="">
         </li>
         <li class="splide__slide">
-          <img src="/img/index/Hero8.png" alt="">
+          <img class="desktop-hero" src="/img/index/Hero8.jpg" alt="">
+          <img class="mobile-hero" src="/img/index/Hero8-mobile.jpg" alt="">
         </li>
       </ul>
     </div>
   </section>
 
+<!-- Title Section -->
+<section style="background-color: var(--primary-background-light);" class="title-section">
+  <div style="padding: 0 0 40px;" class="title-section__wrapper page-wrapper">
+      <h2 class="title-section__title-elem">How Can We Help You?</h2>
+  </div>
+</section>
+
+  <!-- Service Selector -->
+<service-selector
+servicePage='true'
+>
+</service-selector>
+
   <!-- How Can We Help? -->
-  <section class="help-section">
+  <!-- <section class="help-section">
     <div class="help-section__wrapper page-wrapper">
       <h2 class="help-section__title">How Can We Help You?</h2>
       <div class="help-section__card-container">
@@ -176,10 +199,11 @@
             <img class="help-section__card-img" src="/img/index/help_ventilation.png" alt="">
             <div class="help-section__card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</div>
             <a class="btn btn-light" href="/services.html">Find Out More</a>
-        </div>
+          </div>
       </div>
+
     </div>
-  </section>
+  </section> -->
 
   <!-- About Us Panel -->
   <featured-panel 
@@ -216,26 +240,27 @@
     >
   </featured-panel>
 
-  <!-- Quote -->
-  <quote-section 
-    quote="We have this handy fusion reactor in the sky called the sun; you don’t have to do anything, it just works. It shows up every day." 
-    author="- Elon Musk"
-    bgColor="has-bg-color"
-    >
-  </quote-section>
-
+  
   <!-- Battery Storage Panel -->
   <featured-panel 
-    sectionColor="light"
-    imgPosition="img-right"
-    img="/img/index/battery-panel.png"
-    sectionTitle="Battery Storage"
-    bodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-    btnStyle="btn-light"
-    btn1Text="Find Out More"
-    btn1Link="/services.html"
-    >
-  </featured-panel>
+  sectionColor="light"
+  imgPosition="img-right"
+  img="/img/index/battery-panel.png"
+  sectionTitle="Battery Storage"
+  bodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  btnStyle="btn-light"
+  btn1Text="Find Out More"
+  btn1Link="/services.html"
+  >
+</featured-panel>
+
+<!-- Quote -->
+<quote-section 
+  quote="We have this handy fusion reactor in the sky called the sun; you don’t have to do anything, it just works. It shows up every day." 
+  author="- Elon Musk"
+  bgColor="has-bg-color"
+  >
+</quote-section>
 
   <!-- Benefits of Solar -->
   <usp-panel
@@ -284,6 +309,7 @@
   <quote-section 
     quote="We are like tenant farmers chopping down the fence around our house for fuel when we should be using more of nature’s inexhaustible source of energy - the sun." 
     author="- Thomas Edison"
+    sectionMarginClasses="marginDesktop marginMobile"
     bgColor="has-bg-color"
     >
   </quote-section>
@@ -314,7 +340,7 @@
   <!-- Infinite Accreditation Carousel -->
   <infinite-carousel></infinite-carousel>
 
-</main>
+<!-- </main> -->
 
 <!-- Footer -->
 <footer-nav></footer-nav>

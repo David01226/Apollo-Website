@@ -8,7 +8,7 @@ class Carousel extends HTMLElement {
       <div class="splide__track">
         <ul class="splide__list">
           ${this.images.map((img) => {
-            return (`<li class="splide__slide"><img src="/img/our-work/${this.carouselID}/${img}" alt=""></li>`)
+            return (`<li class="splide__slide"><img src="/img/our-work/${this.carouselID}/${img}" alt="Photo of work done by Apollo Renewable Installations" loading="lazy"></li>`)
             }).join("")}
         </ul>
       </div>
@@ -22,7 +22,7 @@ class Carousel extends HTMLElement {
       <div class="splide__track">
         <ul class="splide__list">
         ${this.images.map((img) => {
-          return (`<li class="splide__slide"><img src="/img/our-work/${this.carouselID}/${img}" alt=""></li>`)
+          return (`<li class="splide__slide"><img src="/img/our-work/${this.carouselID}/${img}" alt="Photo of work done by Apollo Renewable Installations for carousel thumbnail" loading="lazy"></li>`)
           }).join("")}
         </ul>
       </div>

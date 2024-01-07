@@ -5,6 +5,8 @@ class FeaturedPanel extends HTMLElement {
     this.sectionMarginClasses = this.getAttribute('sectionMarginClasses');
     this.sectionColor = this.getAttribute('sectionColor');
     this.img = this.getAttribute('img')
+    this.altTag = this.getAttribute('altTag')
+    this.loading = this.getAttribute('loading')
     this.imgPosition = this.getAttribute('imgPosition');
     this.imgSize = this.getAttribute('imgSize');
     this.sectionTitle = this.getAttribute('sectionTitle');
@@ -36,7 +38,7 @@ class FeaturedPanel extends HTMLElement {
         }
       </div>
       <div class="featured-panel__img-container">
-        <img src="${this.img}" alt="photo of team">
+        <img src="${this.img}" alt="${this.altTag ? `${this.altTag}` : ''}" ${this.loading ? `loading="${this.loading}"` : ''}>
       </div>
       </div>
     </div>

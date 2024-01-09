@@ -16,7 +16,7 @@ class Header extends HTMLElement {
         <div class="header__top">
           <img class="header__absolute-logo" src="/img/global/apollo_logo_background_decor.png" alt="Background image of Apollo Logo in desktop navigation menu">
           <div class="header__top-left">
-            <a class="header__homepage-link" href="/index.html">
+            <a class="header__homepage-link" href="/">
               <img src="/img/global/apollo_logo_dark_desktop.png" alt="Apollo Logo">
             </a>
           </div>

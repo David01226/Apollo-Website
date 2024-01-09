@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Work - Solar, Batteries, EV Chargers | Apollo Renewable Installations</title>
+  <title>Careers - Solar, Batteries, EV Chargers | Apollo Renewable Installations</title>
   <link rel="icon" type="image/x-icon" href="/img/global/apollo_logo_SIMPLE_circle.png">
 
   <!-- Font -->
@@ -14,31 +13,29 @@
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="/css/global.css">
   <link rel="stylesheet" type="text/css" href="/css/custom-properties.css">
-  <link rel="stylesheet" type="text/css" href="/css/our-work.css">
+  <link rel="stylesheet" type="text/css" href="/css/about.css">
+  <link rel="stylesheet" type="text/css" href="/css/index.css">
 
   <!-- Components -->
   <script src="/js/components/header-nav.js" type="text/javascript" defer></script>
-  <script src="/js/components/service-selector.js" type="text/javascript" defer></script>
-  <script src="/js/components/our-work-carousels.js" type="text/javascript" defer></script>
-  <script src="/js/components/usp.js" type="text/javascript" defer></script>
   <script src="/js/components/featured-panel.js" type="text/javascript" defer></script>
+  <script src="/js/components/usp.js" type="text/javascript" defer></script>
+  <script src="/js/components/quote.js" type="text/javascript" defer></script>
   <script src="/js/components/infinite-carousel.js" type="text/javascript" defer></script>
   <script src="/js/components/footer-nav.js" type="text/javascript" defer></script>
 
   <!-- Javascript -->
   <script src="/js/mobile-nav.js" type="text/javascript" defer></script>
-
-  <!-- Splide -->
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
 
-<body id="our-work-page">
+<body id="careers-page">
 
+<!-- Background Logo -->
+<img class="fixed-background-logo-sun" src="/img/global/apollo_sun_outline_gold.png" alt="Background image of Apollo logo">
 
 <!-- Header -->
 <header-nav
-  ourWork="selected"
+  about="selected"
   >
 </header-nav>
 
@@ -115,106 +112,31 @@
 <!-- Page Title -->
 <section class="title__container">
   <div class="title__wrapper page-wrapper">
-    <h1>Our Work</h1>
+    <h1>Apollo Careers</h1>
   </div>
 </section>
 
-<!-- Service Selector -->
-<service-selector></service-selector>
-
-<!-- Splide Carousels -->
-<!-- Solar Installation Section -->
-<section id="solar" class="content-section page-wrapper">
-  <h2 class="featured-panel__title">Solar Installation</h2>
-  <our-work-carousel
-    carouselID="solar"
-    images='
-    ["PHOTO-2023-10-26-13-22-51.jpg",
-    "PHOTO-2023-10-26-15-25-15.jpg",
-    "PHOTO-2023-10-31-14-00-49.jpg",
-    "PHOTO-2023-11-06-16-35-37.jpg",
-    "PHOTO-2023-10-17-17-36-23.jpg",
-    "PHOTO-2023-10-24-20-34-47.jpg",
-    "PHOTO-2023-10-24-20-34-48.jpg",
-    "PHOTO-2023-10-25-15-01-49.jpg",
-    "PHOTO-2023-10-26-16-19-09.jpg",
-    "PHOTO-2023-10-26-16-34-40.jpg"
-    ]'
-    >
-  </our-work-carousel>
-</section>
-
-
-<!-- Battery Storage Section -->
-<section id="battery" class="content-section hidden page-wrapper">
-  <h2 class="featured-panel__title">Battery Storage</h2>
-  <our-work-carousel
-    carouselID="battery"
-    images='
-    ["battery(1).jpg",
-    "battery(2).jpg",
-    "battery(3).jpg",
-    "battery(4).jpg",
-    "battery(5).jpg",
-    "battery(6).jpg",
-    "battery(7).jpg",
-    "battery(8).jpg",
-    "battery(9).jpg",
-    "battery(10).jpg",
-    "battery(11).jpg",
-    "battery(12).jpg"
-    ]'
-    >
-  </our-work-carousel>
-</section>
-
-
-<!-- EV Chargers Storage Section -->
-<section id="ev-chargers" class="content-section hidden page-wrapper">
-  <h2 class="featured-panel__title">EV Chargers</h2>
-  <our-work-carousel
-    carouselID="ev-chargers"
-    images='
-    ["battery(1).jpg",
-    "battery(2).jpg",
-    "battery(3).jpg",
-    "battery(4).jpg",
-    "battery(5).jpg",
-    "battery(6).jpg",
-    "battery(7).jpg",
-    "battery(8).jpg",
-    "battery(9).jpg",
-    "battery(10).jpg",
-    "battery(11).jpg",
-    "battery(12).jpg"
-    ]'
-    >
-  </our-work-carousel>
-</section>
-
-
-<!-- Ventilation Section -->
-<section id="ventilation" class="content-section hidden page-wrapper">
-  <h2 class="featured-panel__title">Ventilation</h2>
-  <our-work-carousel
-  carouselID="ventilation"
-  images='
-  ["PHOTO-2023-10-19-16-31-47.jpg",
-  "PHOTO-2023-10-19-16-31-48.jpg",
-  "PHOTO-2023-11-03-12-56-15 (1).jpg",
-  "PHOTO-2023-11-03-12-56-15.jpg",
-  "PHOTO-2023-11-04-17-23-09 (1).jpg",
-  "PHOTO-2023-11-04-17-23-09.jpg",
-  "PHOTO-2023-11-07-09-52-57.jpg",
-  "PHOTO-2023-11-07-11-16-13.jpg"
-  ]'
+<!-- What We Do -->
+<featured-panel 
+  sectionColor="light"
+  imgPosition="img-right"
+  img="/img/index/about-panel.jpg"
+  altTag="Apollo team photo"
+  sectionTitle="WANT TO JOIN THE TEAM?"
+  bodyText="At Apollo we believe in making changes that will impact the planet positively for future generations. Part of this commitment is making use of the renewable resources that that we have at our disposal. One of the best sources of renewable energy is Solar Energy. At Apollo, we want to make this affordable for everyone whilst offering the best products and tailoring a system that allows individual homeowners, businesses and Governments to meet their energy needs.<br><br>We have qualified engineers and professionals in house to ensure that the customer service and workmanship will be of the highest quality at every step of the process."
+  btnStyle="btn-light"
+  btn1Text="Current Vacancies"
+  btn1Link="/careers.html#current-vacancies"
   >
-  </our-work-carousel>
-</section>
+</featured-panel>
+
+<!-- Quote -->
+<quote-section quote="At Apollo our mission is to enable homeowners and businesses to unlock their energy independence and work towards a greener, more cost effective future. We are passionate about the services we offer and strive for excellence with every client we work with." author="- Managing Director"></quote-section>
 
 <!-- Why Choose Us? -->
 <usp-panel
   sectionIdentifier="why-choose-us"
+  sectionMarginClasses="marginDesktop marginMobile"
   sectionColor="dark"
   sectionTitle="Why Choose Us?"
   items='[
@@ -250,10 +172,64 @@
     }
   ]'
   btnStyle="btn-dark"
-  btnText="Find Out More"
-  btnLink="/services.html"
+  btnText="See our work"
+  btnLink="our-work.html"
   >
 </usp-panel>
+
+  <!-- Title Section -->
+  <section id="current-vacancies" class="title-section">
+    <div class="title-section__wrapper page-wrapper">
+        <h2 class="title-section__title-elem">Current Vacancies</h2>
+    </div>
+  </section>
+
+  <!-- Job Vacancy -->
+  <featured-panel 
+    sectionColor="light"
+    imgPosition="img-right"
+    img="/img/careers/solar-installer.jpg"
+    imgSize="contain"
+    sectionMarginClasses="marginDesktop marginMobile"
+    loading="lazy"
+    altTag="Man fitting solar panels"
+    sectionTitle="Solar Panel Installer"
+    bodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu<br><br>Salary £25,000 per annum"
+    btnStyle="btn-dark"
+    btn1Text="Enquire Now"
+    btn1Link="/contact.html"
+    btn2Text="View Job On LinkedIn"
+    btn2Link="/"
+    btn2NewTab="true"
+    >
+  </featured-panel>
+  
+  <!-- EV Charger -->
+  <featured-panel 
+    sectionColor="light"
+    imgPosition="img-right"
+    img="/img/careers/electrician.jpg"
+    imgSize="contain"
+    loading="lazy"
+    altTag="An electrician working on a fuse box"
+    sectionTitle="Apprentice Electrician"
+    bodyText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqu<br><br>Salary £20,000 pro rata"
+    btnStyle="btn-dark"
+    btn1Text="Enquire Now"
+    btn1Link="/contact.html"
+    btn2Text="View Job On LinkedIn"
+    btn2Link="/"
+    btn2NewTab="true"
+    >
+  </featured-panel>
+
+<!-- Quote -->
+<quote-section 
+quote="Every 24 hours, enough sunlight touches the earth to provide energy for the entire planet for 24 years." 
+author="- Martha Maeda"
+>
+</quote-section>
+
 
 <!-- Follow Our Instagram -->
 <section class="instagram">

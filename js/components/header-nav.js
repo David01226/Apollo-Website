@@ -49,7 +49,7 @@ class Header extends HTMLElement {
                   <li class="dropdown-li"><a class="header__dropdown-link" href="/about.html">Our Values</a></li>
                   <li class="dropdown-li"><a class="header__dropdown-link" href="/about.html#our-team">Our Team</a></li>
                   <li class="dropdown-li"><a class="header__dropdown-link" href="/our-work.html">Our Work</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/about.html">Careers</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/careers.html">Careers</a></li>
                 </ul>
               </li>
               <li class="main-li">

@@ -5,6 +5,7 @@ class Header extends HTMLElement {
     this.solarPower = this.getAttribute('solarPower');
     this.services = this.getAttribute('services');
     this.evChargers = this.getAttribute('evChargers');
+    this.products = this.getAttribute('products');
     this.ourWork = this.getAttribute('ourWork');
     this.contact = this.getAttribute('contact');
   }
@@ -76,7 +77,7 @@ class Header extends HTMLElement {
                 <div class="header__nav-link-line"></div>
               </li>
               <li class="main-li">
-                <a class="header__nav-link ${this.products ? this.products : ''}" href="/product">Products</a>
+                <a class="header__nav-link ${this.products ? this.products : ''}" href="/products">Products</a>
                 <div class="header__nav-link-line"></div>
                 <ul class="header__dropdown">
                   <li class="dropdown-li"><a class="header__dropdown-link" href="/products/solar-panel-products.html">Solar Panels</a></li>
@@ -84,6 +85,8 @@ class Header extends HTMLElement {
                   <li class="dropdown-li"><a class="header__dropdown-link" href="/products/inverter-products.html">Inverters</a></li>
                   <li class="dropdown-li"><a class="header__dropdown-link" href="/products/optimiser-products.html">Optimisers</a></li>
                   <li class="dropdown-li"><a class="header__dropdown-link" href="/products/mounting-system-products.html">Mounting Systems</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/ev-chargers.html#our-chargers">EV Chargers</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/ventilation.html#our-extractor-fans">Extractor Fans</a></li>
                 </ul>
               </li>
               <li><a class="header__nav-link ${this.contact ? this.contact : ''}" href="/contact.html">Contact</a></li>

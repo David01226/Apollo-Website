@@ -2,7 +2,7 @@
 .mobile-hero {display: none;}
 #hero-splide {position: relative; height: calc(100vh - 138px);}
 .hero-splide__overlay {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: var(--primary-background-dark); z-index: 2; opacity: 15%;}
-.hero-splide__text-container {position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 4; padding-top: 6%;}
+.hero-splide__text-container {position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 4; padding-top: 6%; transform: translateX(-100%); animation-name: slideInFromLeft; animation-duration: 0.25s; animation-timing-function: linear; animation-delay: 1.4s; animation-direction: normal; animation-fill-mode: forwards;}
 .hero-splide__heading-container {display: flex; flex-direction: column; background-color: #141423eb; width: fit-content; padding: 12px 30px; border-radius: 10px; margin-bottom: 20px;}
 .hero-splide__heading-container h3 {font-size: var(--page-title); color: var(--secondary-text); margin: 0; font-weight: var(--regular-weight);}
 .hero-splide__heading-container h2 {font-size: var(--headline); color: var(--primary-light-text); margin: 0;}
@@ -30,20 +30,31 @@
   .hero-splide__heading-container h2 {font-size: 25px;}
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
 /* Homepage Screoll Button */
-.scroll-btn-wrapper {position: absolute; bottom: 8%; width: 100%; display: flex; justify-content: center; align-items: flex-end; z-index: 8; animation-name: upDown; animation-duration: 0.5s; animation-timing-function: linear; animation-delay: 4s; animation-iteration-count: 2; animation-direction: normal;   }
-.scroll-btn-link {}
+.scroll-btn-wrapper {position: absolute; bottom: 8%; width: 100%; display: flex; justify-content: center; align-items: flex-end; z-index: 8;}
+.scroll-btn-link {animation-name: upDown; animation-duration: 0.5s; animation-timing-function: linear; animation-delay: 4s; animation-iteration-count: 2; animation-direction: normal;}
 .scroll-btn-elem {position: relative; border: 2px solid var(--secondary-background); background-color: var(--primary-background-dark); width: 50px; height: 50px; border-radius: 50%; }
 .scroll-btn-elem::before {content: ''; position: absolute; top: 23px; left: 13px; width: 12px; height: 2px; background-color: var(--secondary-background); transform: rotate(45deg);}
 .scroll-btn-elem::after {content: ''; position: absolute; top: 23px; right: 13px; width: 12px; height: 2px; background-color: var(--secondary-background); transform: rotate(135deg);}
  
+
 @keyframes upDown {
   0% {
     transform: translateY(0px);
   }
 
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-6px);
   }
 
   100% {

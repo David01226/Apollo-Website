@@ -30,6 +30,27 @@
   .hero-splide__heading-container h2 {font-size: 25px;}
 }
 
+/* Homepage Screoll Button */
+.scroll-btn-wrapper {position: absolute; bottom: 8%; width: 100%; display: flex; justify-content: center; align-items: flex-end; z-index: 8; animation-name: upDown; animation-duration: 0.5s; animation-timing-function: linear; animation-delay: 4s; animation-iteration-count: 2; animation-direction: normal;   }
+.scroll-btn-link {}
+.scroll-btn-elem {position: relative; border: 2px solid var(--secondary-background); background-color: var(--primary-background-dark); width: 50px; height: 50px; border-radius: 50%; }
+.scroll-btn-elem::before {content: ''; position: absolute; top: 23px; left: 13px; width: 12px; height: 2px; background-color: var(--secondary-background); transform: rotate(45deg);}
+.scroll-btn-elem::after {content: ''; position: absolute; top: 23px; right: 13px; width: 12px; height: 2px; background-color: var(--secondary-background); transform: rotate(135deg);}
+ 
+@keyframes upDown {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 /* How Can We Help */
 .help-section {width: 100%; padding-top: 80px; margin-bottom: 80px;}
 .help-section__title {text-align: center; color: var(--primary-dark-text); text-transform: uppercase; margin-bottom: 30px; font-size: var(--section-title-primary); font-weight: var(--regular-weight); letter-spacing: 3px; margin-bottom: 40px;}

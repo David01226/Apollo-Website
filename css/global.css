@@ -4,12 +4,12 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  scroll-padding: 158px;
+  /* scroll-padding: 158px; */
 }
 
 @media only screen and (max-width: 1024px) {
   html {
-    scroll-padding: 100px;
+    scroll-padding: 50px;
   }
 }
 
@@ -98,9 +98,9 @@ header {display: flex; flex-direction: column; width: 100%; height: 138px; backg
 }
 
 /* Mobile Header */
-.mobile-nav {height: 80px; background-color: var(--primary-background-dark); position: sticky; z-index: 100; top: 0; left: 0; width: 100%;}
+.mobile-nav {height: 80px; background-color: var(--primary-background-dark); position: sticky; z-index: 100; top: 0; left: 0; width: 100%; transition: all 0.2s linear;}
 .mobile-nav__menu {z-index: 11; position: absolute; top: 0; left: -100%; width: 100%; height: 100vh; background-color: #FFF; padding: 25px; display: flex; flex-direction: column; align-items: flex-end; justify-content: flex-start; transition: all 0.2s ease-in;}
-.mobile-nav__close-container {width: 40px; height: 40px; position: relative;}
+.mobile-nav__close-container {width: 35px; height: 35px; position: relative;}
 .mobile-nav__close-line {width: 100%; height: 2px; background-color: var(--primary-dark-text); position: absolute;}
 .left-line {top: 20px; transform: rotate(45deg);}
 .right-line {top: 20px; transform: rotate(135deg);}

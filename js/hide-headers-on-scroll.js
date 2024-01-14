@@ -8,11 +8,9 @@ if (pageWidth > 1024) {
        if (lastScrollTop > 150) {
          if (st > lastScrollTop) {
            // downscroll code
-           console.log('scroll down')
            desktopHeader.style.transform = 'translateY(-100%)';
           } else if (st < lastScrollTop) {
             // upscroll code
-            console.log('scroll down')
             desktopHeader.style.transform = 'translateY(0%)';
           } // else was horizontal scroll
       }
@@ -25,11 +23,9 @@ if (pageWidth > 1024) {
      if (lastScrollTop > 150) {
          if (st > lastScrollTop) {
            // downscroll code
-           console.log('scroll down')
            mobileHeader.style.transform = 'translateY(-100%)';
           } else if (st < lastScrollTop) {
             // upscroll code
-            console.log('scroll down')
             mobileHeader.style.transform = 'translateY(0%)';
           } // else was horizontal scroll
       }

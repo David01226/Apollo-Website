@@ -28,28 +28,28 @@ class InfiniteCarousel extends HTMLElement {
       <h5 class="infinite-carousel__title">Our Accreditations & Associations</h5>
       <div class="infinite-carousel__container">
         <div class="infinite-carousel__img-wrapper">
-            <img class="infinite-carousel__img" src="/img/global/accreditations/city-guilds.png">
-            <img class="infinite-carousel__img" src="/img/global/accreditations/canadian-solar.jpeg">
-            <img class="infinite-carousel__img" src="/img/global/accreditations/givenergy.png">
-            <img class="infinite-carousel__img" src="/img/global/accreditations/napit.png">
-            <img class="infinite-carousel__img" src="/img/global/accreditations/nic-eic.jpeg">
-            <img class="infinite-carousel__img" src="/img/global/accreditations/site-safe.png">
-            <img class="infinite-carousel__img" src="/img/global/accreditations/solar-edge.png">
-            <img class="infinite-carousel__img" src="/img/global/accreditations/solis.png">
-            <img class="infinite-carousel__img" src="/img/global/accreditations/tesla.jpeg">
-            <img class="infinite-carousel__img" src="/img/global/accreditations/jym.png">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/city-guilds.png" alt="City Guilds Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/canadian-solar.jpeg" alt="Canadian Solar Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/givenergy.png" alt="Give Energy Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/napit.png" alt="Napit Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/nic-eic.jpeg" alt="NIC EIC Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/site-safe.png" alt="Site Safe Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/solar-edge.png" alt="Solar Edge Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/solis.png" alt="Solis Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/tesla.jpeg" alt="Tesla Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/jym.png" alt="JYM Roofing Logo">
             </div>
             <div class="infinite-carousel__img-wrapper">
-            <img class="infinite-carousel__img" src="/img/global/accreditations/city-guilds.png">
-            <img class="infinite-carousel__img" src="/img/global/accreditations/canadian-solar.jpeg">
-            <img class="infinite-carousel__img" src="/img/global/accreditations/givenergy.png">
-            <img class="infinite-carousel__img" src="/img/global/accreditations/napit.png">
-            <img class="infinite-carousel__img" src="/img/global/accreditations/nic-eic.jpeg">
-            <img class="infinite-carousel__img" src="/img/global/accreditations/site-safe.png">
-            <img class="infinite-carousel__img" src="/img/global/accreditations/solar-edge.png">
-            <img class="infinite-carousel__img" src="/img/global/accreditations/solis.png">
-            <img class="infinite-carousel__img" src="/img/global/accreditations/tesla.jpeg">
-            <img class="infinite-carousel__img" src="/img/global/accreditations/jym.png">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/city-guilds.png" alt="City Guilds Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/canadian-solar.jpeg" alt="Canadian Solar Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/givenergy.png" alt="Give Energy Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/napit.png" alt="Napit Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/nic-eic.jpeg" alt="NIC EIC Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/site-safe.png" alt="Site Safe Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/solar-edge.png" alt="Solar Edge Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/solis.png" alt="Solis Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/tesla.jpeg" alt="Tesla Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/jym.png" alt="JYM Roofing Logo">
         </div>
       </div>
    

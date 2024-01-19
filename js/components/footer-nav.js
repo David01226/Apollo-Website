@@ -9,10 +9,10 @@ class Footer extends HTMLElement {
       <div class="footer__wrapper page-wrapper">
         <img class="footer__absolute-logo" src="/img/global/apollo_logo_background_decor_footer.png" alt="Apollo logo background decoration in footer navigation menu">
         <div class="footer__left">
-          <a class="footer__nav-link" href="/services.html">Services</a>
-          <a class="footer__nav-link" href="/our-work.html">Our Work</a>
-          <a class="footer__nav-link" href="/about.html">About Us</a>
-          <a class="footer__nav-link" href="/contact.html">Contact</a>
+          <a class="footer__nav-link" href="/services">Services</a>
+          <a class="footer__nav-link" href="/pages/our-work">Our Work</a>
+          <a class="footer__nav-link" href="/pages/about">About Us</a>
+          <a class="footer__nav-link" href="/pages/contact">Contact</a>
         </div>
         <div class="footer__right">
           <a class="footer__homepage-link" href="/">

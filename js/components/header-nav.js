@@ -43,53 +43,53 @@ class Header extends HTMLElement {
         <div class="header__bottom">
           <ul class="header__nav-container">
               <li class="main-li">
-                <a class="header__nav-link ${this.about ? this.about : ''}" href="/about.html">About Us</a>
+                <a class="header__nav-link ${this.about ? this.about : ''}" href="/pages/about">About Us</a>
                 <div class="header__nav-link-line"></div>
                 <ul class="header__dropdown">
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/about.html">What We Do</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/about.html">Our Values</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/about.html#our-team">Our Team</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/our-work.html">Our Work</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/careers.html">Careers</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/pages/about">What We Do</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/pages/about">Our Values</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/pages/about#our-team">Our Team</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/pages/our-work">Our Work</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/pages/careers">Careers</a></li>
                 </ul>
               </li>
               <li class="main-li">
-                <a class="header__nav-link ${this.solarPower ? this.solarPower : ''}" href="/services/solar-power.html">Solar Power</a>
+                <a class="header__nav-link ${this.solarPower ? this.solarPower : ''}" href="/services/solar-power">Solar Power</a>
                 <div class="header__nav-link-line"></div>
                 <ul class="header__dropdown">
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/solar-power.html#benefits-of-solar">Benefits of Solar</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/solar-power.html#solar-suitable">Are Solar Panels For Me?</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/solar-power#benefits-of-solar">Benefits of Solar</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/solar-power#are-solar-panels-suitable-for-my-home">Are Solar Panels For Me?</a></li>
                   </ul>
               </li>
               <li class="main-li">
                 <a class="header__nav-link ${this.services ? this.services : ''}" href="/services/">Services</a>
                 <div class="header__nav-link-line"></div>
                 <ul class="header__dropdown">
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/solar-power.html#residential-solar">Residential Solar</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/solar-power.html#commercial-solar">Commercial Solar</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/battery-storage.html">Battery Storage</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/ev-chargers.html">EV Chargers</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/ventilation.html">Ventilation</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/solar-power#residential-solar">Residential Solar</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/solar-power#commercial-solar">Commercial Solar</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/battery-storage">Battery Storage</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/ev-chargers">EV Chargers</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/ventilation">Ventilation</a></li>
                 </ul>
               </li>
               <li class="main-li">
-                <a class="header__nav-link ${this.evChargers ? this.evChargers : ''}" href="/services/ev-chargers.html">EV Chargers</a>
+                <a class="header__nav-link ${this.evChargers ? this.evChargers : ''}" href="/services/ev-chargers">EV Chargers</a>
                 <div class="header__nav-link-line"></div>
               </li>
               <li class="main-li">
                 <a class="header__nav-link ${this.products ? this.products : ''}" href="/products">Products</a>
                 <div class="header__nav-link-line"></div>
                 <ul class="header__dropdown">
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/products/solar-panel-products.html">Solar Panels</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/products/battery-storage-products.html">Battery Storage</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/products/inverter-products.html">Inverters</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/products/optimiser-products.html">Optimisers</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/products/mounting-system-products.html">Mounting Systems</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/ev-chargers.html#our-chargers">EV Chargers</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/ventilation.html#our-extractor-fans">Extractor Fans</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/products/solar-panel-products">Solar Panels</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/products/battery-storage-products">Battery Storage</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/products/inverter-products">Inverters</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/products/optimiser-products">Optimisers</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/products/mounting-system-products">Mounting Systems</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/ev-chargers#our-chargers">EV Chargers</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/ventilation#our-extractor-fans">Extractor Fans</a></li>
                 </ul>
               </li>
-              <li><a class="header__nav-link ${this.contact ? this.contact : ''}" href="/contact.html">Contact</a></li>
+              <li><a class="header__nav-link ${this.contact ? this.contact : ''}" href="/pages/contact">Contact</a></li>
           </ul>
         </div>
     </header>

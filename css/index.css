@@ -4,7 +4,7 @@
 .hero-splide__overlay {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: var(--primary-background-dark); z-index: 2; opacity: 15%;}
 .hero-splide__text-container {position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 4; padding-top: 6%; transform: translateX(-100%); animation-name: slideInFromLeft; animation-duration: 0.25s; animation-timing-function: linear; animation-delay: 1.4s; animation-direction: normal; animation-fill-mode: forwards;}
 .hero-splide__heading-container {display: flex; flex-direction: column; background-color: #141423eb; width: fit-content; padding: 12px 30px; border-radius: 10px; margin-bottom: 20px;}
-.hero-splide__heading-container h1 {font-size: var(--page-title); color: var(--secondary-text); margin: 0; font-weight: var(--regular-weight);}
+.hero-splide__heading-container h2 {font-size: var(--page-title); color: var(--secondary-text); margin: 0; font-weight: var(--regular-weight);}
 .hero-splide__heading-container div {font-size: var(--headline); color: var(--primary-light-text); margin: 0; font-weight: bold;}
 .hero-splide__heading-container div span {color: var(--accent-text);}
 .hero-splide__btn-container {display: flex; align-items: center; justify-content: flex-start; gap: 20px;}

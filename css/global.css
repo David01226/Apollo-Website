@@ -327,3 +327,10 @@ footer {width: 100%; height: 250px; background-color: var(--primary-background-d
 .title-section {width: 100%;}
 .title-section__wrapper {padding: 0 0 40px;}
 .title-section__title-elem {text-align: center; text-transform: uppercase; margin: 0; font-size: var(--section-title-primary); font-weight: var(--regular-weight);letter-spacing: 3px;}
+
+
+/* Seo Section */
+.seo__container {width: 100%; background-color: var(--primary-background-light); padding: 80px 0 40px 0;}
+.seo__container h1 {text-align: center; color: var(--primary-dark-text); text-transform: uppercase; margin-bottom: 20px!important; font-size: 22px; font-weight: var(--regular-weight); letter-spacing: 3px; margin-bottom: 0px;}
+.seo__container p {text-align: center; margin-bottom: 0;}
+

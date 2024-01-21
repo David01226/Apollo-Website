@@ -241,6 +241,10 @@ header {display: flex; flex-direction: column; width: 100%; height: 138px; backg
 .usp__item-title {text-transform: uppercase; text-align: center; letter-spacing: 0.9px;}
 .usp__item-body {text-align: center; margin-top: 12px; font-size: 18px; font-weight: 100; line-height: 1.4;}
 .usp__wrapper a {margin-top: 80px;}
+.important-factors.usp__item-container {grid-template-columns: repeat(1, 1fr)!important;}
+.important-factors.usp__item-container .usp__item {align-items: flex-start;}
+.important-factors.usp__item-container .usp__item-body {text-align: left;}
+
 
 @media only screen and (max-width: 1024px) {
   .usp__container {padding: 50px 0;}

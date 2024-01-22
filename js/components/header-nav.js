@@ -47,7 +47,7 @@ class Header extends HTMLElement {
                 <div class="header__nav-link-line"></div>
                 <ul class="header__dropdown">
                   <li class="dropdown-li"><a class="header__dropdown-link" href="/pages/about">What We Do</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/pages/about">Our Values</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/pages/about#our-values">Our Values</a></li>
                   <li class="dropdown-li"><a class="header__dropdown-link" href="/pages/about#our-team">Our Team</a></li>
                   <li class="dropdown-li"><a class="header__dropdown-link" href="/pages/our-work">Our Work</a></li>
                   <li class="dropdown-li"><a class="header__dropdown-link" href="/pages/careers">Careers</a></li>

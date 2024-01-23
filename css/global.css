@@ -244,7 +244,7 @@ header {display: flex; flex-direction: column; width: 100%; height: 138px; backg
 .usp__wrapper a {margin-top: 80px;}
 .single-col-desktop.usp__item-container {grid-template-columns: repeat(1, 1fr)!important; gap: 70px;}
 .single-col-desktop.usp__item-container .usp__item {align-items: flex-start;}
-.single-col-desktop.usp__item-container .usp__item-title {font-size: 18px;}
+.single-col-desktop.usp__item-container .usp__item-title {font-size: 18px; text-align: left;}
 .single-col-desktop.usp__item-container .usp__item-body {text-align: left; padding: 0;}
 .double-col-desktop.usp__item-container {grid-template-columns: repeat(2, 1fr)!important; gap: 70px;}
 .double-col-desktop.usp__item-container .usp__item-title {color: var(--secondary-text); font-size: 18px;}

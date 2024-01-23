@@ -2,6 +2,7 @@ class USP extends HTMLElement {
   constructor() {
     super();
     this.sectionIdentifier = this.getAttribute('sectionIdentifier');
+    this.sectionLayout = this.getAttribute('sectionLayout');
     this.sectionMarginClasses = this.getAttribute('sectionMarginClasses');
     this.sectionColor = this.getAttribute('sectionColor');
     this.sectionTitle = this.getAttribute('sectionTitle');
@@ -15,10 +16,10 @@ class USP extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <style>
-    .${this.sectionIdentifier}.usp__item-container {grid-template-columns: repeat(${this.items.length}, 1fr);}
+    #${this.sectionIdentifier} .usp__item-container {grid-template-columns: repeat(${this.items.length}, 1fr);}
     @media only screen and (max-width: 767px) {
-      .${this.sectionIdentifier}.usp__item-container {grid-template-columns: repeat(2, 1fr); gap: 40px 0;}
-      .are-solar-panels-suitable-for-my-home.usp__item-container {grid-template-columns: repeat(1, 1fr);}
+      #${this.sectionIdentifier} .usp__item-container {grid-template-columns: repeat(2, 1fr); gap: 40px 0;}
+      #are-solar-panels-suitable-for-my-home .usp__item-container {grid-template-columns: repeat(1, 1fr);}
     }
     </style>
     <div ${this.sectionIdentifier ? `id="${this.sectionIdentifier}"` : '' } class="usp__container ${this.sectionColor} ${this.sectionMarginClasses ? `${this.sectionMarginClasses}` : ''}">
@@ -27,7 +28,7 @@ class USP extends HTMLElement {
           ${this.sectionTitle ? `<h2 class="usp__section-title">${this.sectionTitle}</h2>` : '' }
           ${this.sectionSubTitle ? `<h4 class="usp__section-sub-title">${this.sectionSubTitle}</h4>` : '' }
         </div>
-        <div class="usp__item-container ${this.sectionIdentifier}">
+        <div class="usp__item-container${this.sectionLayout ? ` ${this.sectionLayout}` : '' }">
         ${this.items.map((item) => {
           return (
             `

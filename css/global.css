@@ -7,11 +7,11 @@ html {
   /* scroll-padding: 158px; */
 }
 
-@media only screen and (max-width: 1024px) {
+/* @media only screen and (max-width: 1024px) {
   html {
     scroll-padding: 50px;
   }
-}
+} */
 
 *, 
 *::before,
@@ -46,7 +46,7 @@ ul li {
   display: inline-block;
 }
 
-.fixed-background-logo-sun {pointer-events: none; position: absolute; top: -8%; left: -20%; z-index: -1; width: 60%; opacity: 8%;}
+.fixed-background-logo-sun {pointer-events: none; position: absolute; top: -16vh; left: -20%; z-index: -1; width: 60%; opacity: 8%;}
 @media only screen and (max-width: 767px) {
   .fixed-background-logo-sun {display: none;}
 }
@@ -132,7 +132,7 @@ header {display: flex; flex-direction: column; width: 100%; height: 138px; backg
 
 /* Page Title */
 .title__container {width: 100%;}
-.title__wrapper {padding: 60px 0 50px 0;}
+.title__wrapper {padding: 50px 0 40px 0;}
 .title__wrapper h1 {text-align: center; font-size: var(--page-title); font-weight: var(--bold-weight); text-transform: uppercase; color: var(--primary-dark-text); margin-bottom: 0; letter-spacing: 3px;}
 @media only screen and (max-width: 1024px) {
   .title__wrapper {padding: 40px 0 30px 0;}
@@ -226,10 +226,11 @@ header {display: flex; flex-direction: column; width: 100%; height: 138px; backg
 .usp__container {width: 100%; padding: 60px 0;}
 .usp__container.marginDesktop {margin-bottom: 80px;}
 .dark.usp__container {background-color: var(--primary-background-dark);}
+.transparent.usp__container {background-color: transparent;}
 .light.usp__container {background-color: var(--primary-background-light);}
-.light.usp__container .usp__section-title,
-.light.usp__container .usp__section-sub-title,
-.light.usp__container .usp__item-container, 
+.light.usp__container .usp__section-title, .transparent.usp__container .usp__section-title,
+.light.usp__container .usp__section-sub-title, .transparent.usp__container .usp__section-sub-title,
+.light.usp__container .usp__item-container, .transparent.usp__container .usp__item-container, 
 .light.usp__container .usp__item svg {color: var(--primary-dark-text); fill: var(--primary-dark-text);}
 .usp__wrapper {display: flex; flex-direction: column; align-items: center; justify-content: center;}
 .usp__title-container {display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; margin-bottom: 80px;}
@@ -241,12 +242,21 @@ header {display: flex; flex-direction: column; width: 100%; height: 138px; backg
 .usp__item-title {text-transform: uppercase; text-align: center; letter-spacing: 0.9px;}
 .usp__item-body {text-align: center; margin-top: 12px; font-size: 18px; font-weight: 100; line-height: 1.4;}
 .usp__wrapper a {margin-top: 80px;}
-.important-factors.usp__item-container {grid-template-columns: repeat(1, 1fr)!important; gap: 70px;}
-.important-factors.usp__item-container .usp__item {align-items: flex-start;}
-.important-factors.usp__item-container .usp__item-body {text-align: left;}
+.single-col-desktop.usp__item-container {grid-template-columns: repeat(1, 1fr)!important; gap: 70px;}
+.single-col-desktop.usp__item-container .usp__item {align-items: flex-start;}
+.single-col-desktop.usp__item-container .usp__item-title {font-size: 18px;}
+.single-col-desktop.usp__item-container .usp__item-body {text-align: left; padding: 0;}
+.double-col-desktop.usp__item-container {grid-template-columns: repeat(2, 1fr)!important; gap: 70px;}
+.double-col-desktop.usp__item-container .usp__item-title {color: var(--secondary-text); font-size: 18px;}
+
+
 
 
 @media only screen and (max-width: 1024px) {
+  .single-col-desktop.usp__item-container {gap: 60px;}
+  .double-col-desktop.usp__item-container {grid-template-columns: repeat(1, 1fr)!important; gap: 60px;}
+  .double-col-desktop.usp__item-container .usp__item-body {text-align: left; padding: 0;}
+  .double-col-desktop.usp__item-container .usp__item {align-items: flex-start;}
   .usp__container {padding: 50px 0;}
   .usp__container.marginDesktop {margin-bottom: 0px;}
   .usp__container.marginMobile {margin-bottom: 50px;}
@@ -268,6 +278,8 @@ header {display: flex; flex-direction: column; width: 100%; height: 138px; backg
 .quote {width: 100%; padding: 80px 0;}
 .quote.marginDesktop {margin-bottom: 80px;}
 .quote.has-bg-color {background-color: var(--primary-background-light);}
+.quote.has-bg-color-dark {background-color: var(--primary-background-dark);}
+.quote.has-bg-color-dark .quote__text {color: var(--primary-light-text);}
 .quote__text {width: 100%; text-align: center; font-size: var(--quote-text); font-weight: var(--light-weight); color: var(--primary-dark-text); margin-bottom: 15px; line-height: 1.4;}
 .quote__author {width: 100%; text-align: center; font-size: var(--author-text); font-weight: var(--bold-weight); color: var(--secondary-text);}
 

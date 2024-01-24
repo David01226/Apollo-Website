@@ -41,7 +41,7 @@ class Header extends HTMLElement {
         </div>
       </div>
         <div class="header__bottom">
-          <ul class="header__nav-container">
+          <ul class="header__nav-container page-wrapper">
               <li class="main-li">
                 <a class="header__nav-link ${this.about ? this.about : ''}" href="/pages/about">About Us</a>
                 <div class="header__nav-link-line"></div>

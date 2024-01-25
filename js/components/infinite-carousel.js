@@ -25,7 +25,7 @@ class InfiniteCarousel extends HTMLElement {
     </style>
 
   
-      <h5 class="infinite-carousel__title">Our Accreditations & Associations</h5>
+      <div class="infinite-carousel__title">Our Accreditations & Associations</div>
       <div class="infinite-carousel__container">
         <div class="infinite-carousel__img-wrapper">
             <img class="infinite-carousel__img" src="/img/global/accreditations/city-guilds.jpg" alt="City Guilds Logo">

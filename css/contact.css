@@ -3,7 +3,7 @@
 .contact-details a {text-decoration: none; color: var(--primary-light-text); font-size: 20px;}
 .contact-details__wrapper {display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px;}
 .contact-details__left {background-color: var(--primary-background-light); padding: 30px; border-radius: 10px; border: 1px solid var(--primary-dark-text);}
-.contact-details__left h4 {color: var(--secondary-text); margin: 0 0 20px; font-size: 26px;}
+.contact-details__left .header {color: var(--secondary-text); margin: 0 0 20px; font-size: 26px;}
 .contact-details__left p {margin: 0; line-height: 1.3;}
 .contact-details__middle {display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--primary-light-text); gap: 20px;}
 .contact-details__middle-phone {display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; border-radius: 10px; width: 100%; background-color: var(--primary-background-dark); padding: 30px;}

@@ -17,9 +17,11 @@ class USP extends HTMLElement {
     this.innerHTML = `
     <style>
     #${this.sectionIdentifier} .usp__item-container {grid-template-columns: repeat(${this.items.length}, 1fr);}
+    @media only screen and (max-width: 1024px) {
+      #${this.sectionIdentifier} .usp__item-container {grid-template-columns: repeat(3, 1fr); gap: 40px 10px;}
+    }
     @media only screen and (max-width: 767px) {
       #${this.sectionIdentifier} .usp__item-container {grid-template-columns: repeat(2, 1fr); gap: 40px 0;}
-      #are-solar-panels-suitable-for-my-home .usp__item-container {grid-template-columns: repeat(1, 1fr);}
     }
     </style>
     <div ${this.sectionIdentifier ? `id="${this.sectionIdentifier}"` : '' } class="usp__container ${this.sectionColor} ${this.sectionMarginClasses ? `${this.sectionMarginClasses}` : ''}">

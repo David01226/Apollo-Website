@@ -44,7 +44,7 @@ class USP extends HTMLElement {
           )
         }).join("")}
         </div>
-        ${this.btnText ? `<a class="btn ${this.btnStyle}" href="${this.btnLink}">${this.btnText}</a>` : '' }
+        ${this.btnText ? `<a class="btn ${this.btnStyle}" href="${this.btnLink}" aria-label="Link button to ${this.btnText}">${this.btnText}</a>` : '' }
         
       </div>
     </div>

@@ -9,6 +9,7 @@ class FeaturedPanel extends HTMLElement {
     this.loading = this.getAttribute('loading')
     this.imgPosition = this.getAttribute('imgPosition');
     this.imgSize = this.getAttribute('imgSize');
+    this.imgPaddingClass = this.getAttribute('imgPaddingClass');
     this.sectionTitle = this.getAttribute('sectionTitle');
     this.bodyText = this.getAttribute('bodyText');
     this.btnStyle = this.getAttribute('btnStyle')
@@ -30,14 +31,14 @@ class FeaturedPanel extends HTMLElement {
 
         ${this.btn1Text ? 
           `<div class="featured-panel__btn-container">
-          ${this.btn1Text ? `<a class="btn ${this.btnStyle}" href="${this.btn1Link}" ${this.btn1NewTab ? `target="_blank"` : ''}>${this.btn1Text}</a>` : ''}
-          ${this.btn2Text ? `<a class="btn ${this.btnStyle}" href="${this.btn2Link}" ${this.btn2NewTab ? `target="_blank"` : ''}>${this.btn2Text}</a>` : ''}
+          ${this.btn1Text ? `<a class="btn ${this.btnStyle}" href="${this.btn1Link}" ${this.btn1NewTab ? `target="_blank"` : ''} aria-label="Link button to ${this.btn1Text}">${this.btn1Text}</a>` : ''}
+          ${this.btn2Text ? `<a class="btn ${this.btnStyle}" href="${this.btn2Link}" ${this.btn2NewTab ? `target="_blank"` : ''} aria-label="Link button to ${this.btn2Text}">${this.btn2Text}</a>` : ''}
           </div>`
         :
           ''
         }
       </div>
-      <div class="featured-panel__img-container">
+      <div class="featured-panel__img-container ${this.imgPaddingClass ? `${this.imgPaddingClass}` : ''}">
         <img src="${this.img}" alt="${this.altTag ? `${this.altTag}` : ''}" ${this.loading ? `loading="${this.loading}"` : ''}>
       </div>
       </div>

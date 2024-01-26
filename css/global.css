@@ -148,7 +148,7 @@ header {display: flex; flex-direction: column; width: 100%; height: 138px; backg
 .service-selector__item.selected {cursor: default;}
 .service-selector__item.selected svg, .service-selector__item.selected h3 {fill: var(--primary-dark-text); color: var(--primary-dark-text);}
 .service-selector__item svg {width: 50px; max-height: 50px; fill: var(--secondary-background);}
-.service-selector__item h3 {color: var(--secondary-text); text-align: center; font-size: var(--body-text); font-weight: var(--regular-weight); text-transform: uppercase; line-height: 1.4; letter-spacing: 0.9px;}
+.service-selector__item .service-selector__item-title {color: var(--secondary-text); text-align: center; font-size: var(--body-text); font-weight: var(--regular-weight); text-transform: uppercase; line-height: 1.4; letter-spacing: 0.9px;}
 @media only screen and (max-width: 1024px) {
   #index-page .service-selector {padding-bottom: 30px;}
   .service-selector {background-color: var(--primary-background-light);}
@@ -158,7 +158,7 @@ header {display: flex; flex-direction: column; width: 100%; height: 138px; backg
   .service-selector__wrapper {padding: 25px 12px 15px; grid-template-columns: repeat(2, 1fr);}
   .service-selector__item svg {width: 40px; max-height: 40px;}
   .service-selector__item {gap: 12px;}
-  .service-selector__item h3 {font-size: 14px;}
+  .service-selector__item .service-selector__item-title {font-size: 14px;}
 }
 
 /* Content Sections */
@@ -197,7 +197,11 @@ header {display: flex; flex-direction: column; width: 100%; height: 138px; backg
 .featured-panel__body-text {line-height: 1.4; font-size: var(--body-text); color: var(--primary-dark-text); font-weight: var(--regular-weight);}
 .featured-panel__btn-container {display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-start; gap: 12px; width: 100%; margin-top: 50px;}
 .featured-panel__body-text .contact-email {text-decoration: none; color: #ae8f59; font-weight: 500; font-size: 17px;}
+#our-process .featured-panel__title {padding-bottom: 5px; border-bottom: 2px solid var(--secondary-background);}
 
+@media only screen and (min-width: 1024px) {
+  .desktopImgPadding.featured-panel__img-container {padding: 40px;}
+}
 
 @media only screen and (max-width: 1024px) {
   .featured-panel.marginDesktop {margin-bottom: 0px;}
@@ -207,6 +211,9 @@ header {display: flex; flex-direction: column; width: 100%; height: 138px; backg
   .contain .featured-panel__img-container {position: absolute;}
 }
 @media only screen and (max-width: 767px) {
+  #our-process .featured-panel__title {padding-bottom: 15px; width: 100%;}
+  .img-left .featured-panel__text-container, .img-left .featured-panel__btn-container  {align-items: flex-start;}
+  .img-left .featured-panel__title, .img-left .featured-panel__body-text  {text-align: left;}
   .featured-panel__title {margin-bottom: 20px;}
   .featured-panel__wrapper {flex-direction: column-reverse;}
   .featured-panel__img-container {position: relative; width: 100%;}
@@ -230,8 +237,8 @@ header {display: flex; flex-direction: column; width: 100%; height: 138px; backg
 .light.usp__container .usp__item-container, .transparent.usp__container .usp__item-container, 
 .light.usp__container .usp__item svg {color: var(--primary-dark-text); fill: var(--primary-dark-text);}
 .usp__wrapper {display: flex; flex-direction: column; align-items: center; justify-content: center;}
-.usp__title-container {display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; margin-bottom: 80px;}
-.usp__section-title {text-align: center; color: var(--primary-light-text); text-transform: uppercase; margin-bottom: 30px; font-size: var(--section-title-primary); font-weight: var(--regular-weight);letter-spacing: 3px; margin-bottom: 0px;}
+.usp__title-container {display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; margin-bottom: 80px;}
+.usp__section-title {text-align: center; color: var(--primary-light-text); text-transform: uppercase; margin-bottom: 30px; font-size: var(--section-title-primary); font-weight: var(--regular-weight);letter-spacing: 3px; margin-bottom: 0px; padding-bottom: 5px; border-bottom: 2px solid var(--secondary-background);}
 .usp__section-sub-title {color: var(--primary-light-text); margin: 0; font-size: 20px; font-weight: 300;}
 .usp__item-container {width: 100%; color: var(--primary-light-text); display: grid; }
 .usp__item {display: flex; flex-direction: column; align-items: center; justify-content: flex-start;}
@@ -268,7 +275,8 @@ header {display: flex; flex-direction: column; width: 100%; height: 138px; backg
   .usp__item-body {padding: 0 5px;}
 }
 @media only screen and (max-width: 767px) {
-  .usp__section-sub-title {font-size: 18px;}
+  .usp__section-title {padding-bottom: 15px;}
+  .usp__section-sub-title {font-size: 16px;}
   .usp__item-container {grid-template-columns: repeat(1, 1fr); gap: 40px;}
   .usp__item-body {font-size: 16px;}
   #are-solar-panels-suitable-for-my-home .usp__item-container {grid-template-columns: repeat(1, 1fr);}
@@ -293,7 +301,7 @@ header {display: flex; flex-direction: column; width: 100%; height: 138px; backg
 /* Instagram Section */
 .instagram {width: 100%; margin-bottom: 80px;}
 .instagram__wrapper {background-color: var(--primary-background-light); padding: 50px; border-radius: 10px; display: flex; flex-direction: column; align-items: center;}
-.instagram__section-title {text-transform: uppercase; font-size: var(--section-title-primary); font-weight: var(--regular-weight);letter-spacing: 3px; text-align: center; margin-bottom: 40px;}
+.instagram__section-title {text-transform: uppercase; font-size: var(--section-title-primary); font-weight: var(--regular-weight);letter-spacing: 3px; text-align: center; margin-bottom: 40px; border-bottom: 2px solid var(--secondary-background); padding-bottom: 5px;}
 .instagram__img-container {display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; margin-bottom: 40px;}
 .instagram__img {display: flex; width: 100%;}
 .instagram__img img {width: 100%;}
@@ -303,6 +311,7 @@ header {display: flex; flex-direction: column; width: 100%; height: 138px; backg
   .instagram__img-container {gap: 10px;}
 }
 @media only screen and (max-width: 767px) {
+  .instagram__section-title {padding-bottom: 13px;}
   .instagram__section-title {margin-bottom: 20px;}
   .instagram__img-container {grid-template-columns: repeat(2, 1fr); margin-bottom: 25px;}
 }

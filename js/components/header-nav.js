@@ -86,7 +86,6 @@ class Header extends HTMLElement {
                   <li class="dropdown-li"><a class="header__dropdown-link" href="/products/optimiser-products">Optimisers</a></li>
                   <li class="dropdown-li"><a class="header__dropdown-link" href="/products/mounting-system-products">Mounting Systems</a></li>
                   <li class="dropdown-li"><a class="header__dropdown-link" href="/services/ev-chargers#our-chargers">EV Chargers</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/ventilation#our-extractor-fans">Extractor Fans</a></li>
                 </ul>
               </li>
               <li><a class="header__nav-link ${this.contact ? this.contact : ''}" href="/pages/contact">Contact</a></li>

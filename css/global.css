@@ -173,8 +173,14 @@ header {display: flex; flex-direction: column; width: 100%; height: 138px; backg
   .mobile-nav__menu {display: none;}
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   .mobile-nav {position: fixed;}
+}
+
+
+/* Main Content Wrapper */
+@media only screen and (max-width: 1024px) {
+  #main-content {margin-top: 80px;}
 }
 
 
@@ -184,7 +190,7 @@ header {display: flex; flex-direction: column; width: 100%; height: 138px; backg
 .title__wrapper h1 {text-align: center; font-size: var(--page-title); font-weight: var(--bold-weight); text-transform: uppercase; color: var(--primary-dark-text); margin-bottom: 0; letter-spacing: 3px; position: relative;}
 .title__wrapper h1::after {content: ''; bottom: -2px; left: 0; position: absolute; background-color: var(--secondary-background); width: 100%; height: 2px;}
 @media only screen and (max-width: 1024px) {
-  .title__wrapper {padding: 40px 0 30px 0;}
+  .title__wrapper {padding: 30px 0;}
 }
 @media only screen and (max-width: 767px) {
   .title__wrapper {padding: 20px 0;}

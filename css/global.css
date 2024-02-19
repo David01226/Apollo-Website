@@ -384,6 +384,8 @@ footer {width: 100%; height: 250px; background-color: var(--primary-background-d
 .footer__social-link {display: flex;}
 .footer__social-link svg {width: 35px; color: var(--primary-light-text); transition: all 0.1s linear;}
 .footer__social-link svg:hover {color: var(--secondary-text);}
+.footer__creator {color: var(--primary-light-text); font-size: 14px; font-weight: var(--light-weight); text-transform: uppercase; letter-spacing: 3px;}
+.footer__creator-link {text-decoration: none; color: var(--secondary-text);}
 
 @media only screen and (max-width: 1024px) {
   footer {height: 200px;}
@@ -396,6 +398,7 @@ footer {width: 100%; height: 250px; background-color: var(--primary-background-d
   .footer__left {align-items: center; gap: 18px;}
   .footer__right {align-items: center; flex-direction: column-reverse; gap: 30px;}
   .footer__absolute-logo {display: none;}
+  .footer__creator {order: -1;}
 }
 
 /* Title Section */

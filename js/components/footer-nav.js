@@ -30,6 +30,9 @@ class Footer extends HTMLElement {
               </svg>
             </a>
           </div>
+          <div class="footer__creator">
+            Website by <a class="footer__creator-link" href="mailto:davidjohngibson97@gmail.com">David Gibson</a>
+          </div>
         </div>
       </div>
     </footer>

@@ -29,6 +29,7 @@ class InfiniteCarousel extends HTMLElement {
       <div class="infinite-carousel__container">
         <div class="infinite-carousel__img-wrapper">
             <img class="infinite-carousel__img" src="/img/global/accreditations/city-guilds.jpg" alt="City Guilds Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/renewable-energy-hub.jpg" alt="The Renewable Energy Hub">
             <img class="infinite-carousel__img" src="/img/global/accreditations/canadian-solar.jpg" alt="Canadian Solar Logo">
             <img class="infinite-carousel__img" src="/img/global/accreditations/givenergy.jpg" alt="Give Energy Logo">
             <img class="infinite-carousel__img" src="/img/global/accreditations/napit.jpg" alt="Napit Logo">
@@ -41,6 +42,7 @@ class InfiniteCarousel extends HTMLElement {
             </div>
             <div class="infinite-carousel__img-wrapper">
             <img class="infinite-carousel__img" src="/img/global/accreditations/city-guilds.jpg" alt="City Guilds Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/renewable-energy-hub.jpg" alt="The Renewable Energy Hub">
             <img class="infinite-carousel__img" src="/img/global/accreditations/canadian-solar.jpg" alt="Canadian Solar Logo">
             <img class="infinite-carousel__img" src="/img/global/accreditations/givenergy.jpg" alt="Give Energy Logo">
             <img class="infinite-carousel__img" src="/img/global/accreditations/napit.jpg" alt="Napit Logo">

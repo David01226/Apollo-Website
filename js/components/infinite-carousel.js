@@ -33,7 +33,6 @@ class InfiniteCarousel extends HTMLElement {
             <img class="infinite-carousel__img" src="/img/global/accreditations/canadian-solar.jpg" alt="Canadian Solar Logo">
             <img class="infinite-carousel__img" src="/img/global/accreditations/givenergy.jpg" alt="Give Energy Logo">
             <img class="infinite-carousel__img" src="/img/global/accreditations/napit.jpg" alt="Napit Logo">
-            <img class="infinite-carousel__img" src="/img/global/accreditations/nic-eic.jpg" alt="NIC EIC Logo">
             <img class="infinite-carousel__img" src="/img/global/accreditations/site-safe.jpg" alt="Site Safe Logo">
             <img class="infinite-carousel__img" src="/img/global/accreditations/solar-edge.jpg" alt="Solar Edge Logo">
             <img class="infinite-carousel__img" src="/img/global/accreditations/solis.jpg" alt="Solis Logo">
@@ -46,7 +45,6 @@ class InfiniteCarousel extends HTMLElement {
             <img class="infinite-carousel__img" src="/img/global/accreditations/canadian-solar.jpg" alt="Canadian Solar Logo">
             <img class="infinite-carousel__img" src="/img/global/accreditations/givenergy.jpg" alt="Give Energy Logo">
             <img class="infinite-carousel__img" src="/img/global/accreditations/napit.jpg" alt="Napit Logo">
-            <img class="infinite-carousel__img" src="/img/global/accreditations/nic-eic.jpg" alt="NIC EIC Logo">
             <img class="infinite-carousel__img" src="/img/global/accreditations/site-safe.jpg" alt="Site Safe Logo">
             <img class="infinite-carousel__img" src="/img/global/accreditations/solar-edge.jpg" alt="Solar Edge Logo">
             <img class="infinite-carousel__img" src="/img/global/accreditations/solis.jpg" alt="Solis Logo">

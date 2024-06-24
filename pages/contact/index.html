@@ -295,7 +295,8 @@
 
         <!-- Form -->
         <h2 class="header">Get in touch</h2>
-        <form class="contact-form__wrapper" name="contact" method="POST" data-netlify="true" onSubmit="submit" action="/submitted.html" >
+        <form class="contact-form__wrapper" name="contact" method="POST" data-netlify="true" onSubmit="submit" action="/submitted.html" data-netlify-honeypot="bot-field">
+          <input name="bot-field" style="display: none;">
           <input type="text" id="name" name="name" placeholder="Name" class="contact-form__input">
           <input type="text" id="number" name="number" placeholder="Mobile number" class="contact-form__input">
           <select name="service" id="service" class="contact-form__select">

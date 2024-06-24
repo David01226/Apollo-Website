@@ -600,7 +600,7 @@ footer {width: 100%; height: 250px; background-color: var(--primary-background-d
 .contact-details__middle span {font-size: 16px; text-transform: uppercase; color: var(--secondary-text);}
 .contact-details__middle p {font-size: 20px; margin-top: 15px; margin-bottom: 0;}
 .contact-details__middle-email {display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; border-radius: 10px; width: 100%; background-color: var(--primary-background-dark); padding: 30px; flex-grow: 1;}
-.contact-details__right {display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--primary-light-text); background-color: var(--primary-background-dark); padding: 30px; border-radius: 10px; gap: 40px;}
+.contact-details__right {display: flex; flex-direction: column; align-items: center; justify-content: center; color: var(--primary-light-text); background-color: var(--primary-background-dark); padding: 30px; border-radius: 10px;}
 .contact-details__right-top { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;}
 .contact-details__right-top svg {width: 100%; max-width: 35px; max-height: 35px; fill: var(--primary-light-text)}
 .contact-details__right-top span {font-size: 16px; text-transform: uppercase; color: var(--secondary-text);}
@@ -632,7 +632,7 @@ footer {width: 100%; height: 250px; background-color: var(--primary-background-d
 @media only screen and (max-width: 767px) {
   .contact-details__wrapper {gap: 10px;}
   .contact-details__middle {flex-direction: column; gap: 10px;}
-  .contact-details__right {padding: 20px; gap: 20px;}
+  .contact-details__right {padding: 20px;}
   .contact-details__right-top svg {max-width: 30px; max-height: 30px;}
   .contact-details__right-bottom {flex-direction: column; gap: 10px;}
   .contact-details__middle p {margin-top: 10px; font-size: 18px;}
@@ -640,9 +640,17 @@ footer {width: 100%; height: 250px; background-color: var(--primary-background-d
   .contact-details__right-bottom .instagram, .contact-details__right-bottom .facebook {gap: 8px;}
   .contact-details__location-header {margin-bottom: 12px;}
   .contact-details__location {flex-direction: column; gap: 20px;}
+  .contact-form__wrapper {gap: 20px;}
 }
 
 
 /* Submission Page */
 .submission-message-container {margin: 120px 0; width: 100%; display: flex; justify-content: center; align-items: center;}
-.submission-message {color: var(--secondary-text); margin: 0; font-size: 26px;}
+.submission-message {color: var(--secondary-text); margin: 0; font-size: 26px; text-align: center;}
+
+@media only screen and (max-width: 1024px) {
+  .submission-message-container {margin: 200px 0 120px; width: 100%; display: flex; justify-content: center; align-items: center;}
+}
+@media only screen and (max-width: 767px) {
+  .submission-message-container {margin: 180px 0 120px; padding: 0 25px;}
+}

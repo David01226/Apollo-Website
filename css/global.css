@@ -401,6 +401,7 @@ footer {width: 100%; height: 250px; background-color: var(--primary-background-d
   .footer__right {align-items: center; flex-direction: column-reverse; gap: 20px;}
   .footer__absolute-logo {display: none;}
   .footer__contact {align-items: center;}
+  .footer__mob, .footer__email  {font-size: 18px;}
 }
 
 /* Title Section */

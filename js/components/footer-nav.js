@@ -18,6 +18,10 @@ class Footer extends HTMLElement {
           <a class="footer__homepage-link" href="/">
             <img src="/img/global/apollo_logo_dark_desktop.png" alt="Apollo Logo">
           </a>
+          <div class="footer__contact">
+            <a class="footer__mob" href="tel:07725750573">+44 7725 750573</a>
+            <a class="footer__email" href="mailto:sales@apollori.co.uk">sales@apollori.co.uk</a>
+          </div>
           <div class="footer__social-container">
             <a class="footer__social-link" aria-label="Instagram" target="_blank" href="https://www.instagram.com/apollori_co_uk/?igsh=OG96aXFrbHQ1MG55">
               <svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" width="40px" height="40px" aria-hidden="true" focusable="false" class="icon icon-instagram" viewBox="0 0 20 20">
@@ -29,9 +33,6 @@ class Footer extends HTMLElement {
                 <path fill="currentColor" d="M18 10.049C18 5.603 14.419 2 10 2c-4.419 0-8 3.603-8 8.049C2 14.067 4.925 17.396 8.75 18v-5.624H6.719v-2.328h2.03V8.275c0-2.017 1.195-3.132 3.023-3.132.874 0 1.79.158 1.79.158v1.98h-1.009c-.994 0-1.303.621-1.303 1.258v1.51h2.219l-.355 2.326H11.25V18c3.825-.604 6.75-3.933 6.75-7.951Z"/>
               </svg>
             </a>
-          </div>
-          <div class="footer__creator">
-            Website by <a class="footer__creator-link" href="mailto:davidjohngibson97@gmail.com">David Gibson</a>
           </div>
         </div>
       </div>

@@ -54,21 +54,22 @@ class Header extends HTMLElement {
                 </ul>
               </li>
               <li class="main-li">
-                <a class="header__nav-link ${this.solarPower ? this.solarPower : ''}" href="/services/solar-power">Solar Power</a>
+                <a class="header__nav-link ${this.solarPower ? this.solarPower : ''}" href="/services/#solar">Solar Power</a>
                 <div class="header__nav-link-line"></div>
                 <ul class="header__dropdown">
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/solar-power#benefits-of-solar">Benefits of Solar</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/solar-power#are-solar-panels-suitable-for-my-home">Are Solar Panels For Me?</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/residential-solar">Residential Solar</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/commercial-solar">Commercial Solar</a></li>
                   </ul>
               </li>
               <li class="main-li">
                 <a class="header__nav-link ${this.services ? this.services : ''}" href="/services/">Services</a>
                 <div class="header__nav-link-line"></div>
                 <ul class="header__dropdown">
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/solar-power#residential-solar">Residential Solar</a></li>
-                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/solar-power#commercial-solar">Commercial Solar</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/residential-solar">Residential Solar</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/commercial-solar">Commercial Solar</a></li>
                   <li class="dropdown-li"><a class="header__dropdown-link" href="/services/battery-storage">Battery Storage</a></li>
                   <li class="dropdown-li"><a class="header__dropdown-link" href="/services/ev-chargers">EV Chargers</a></li>
+                  <li class="dropdown-li"><a class="header__dropdown-link" href="/services/roofing">Roofing</a></li>
                   <li class="dropdown-li"><a class="header__dropdown-link" href="/services/ventilation">Ventilation</a></li>
                 </ul>
               </li>

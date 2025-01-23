@@ -22,8 +22,8 @@ class Header extends HTMLElement {
             </a>
           </div>
           <div class="header__top-right">
-            <a class="header__contact-number-link" href="tel:07725750573">
-              <div class="header__contact-number"><span>Call </span>07725 750573</div>
+            <a class="header__contact-number-link" href="tel:0800 129 9123">
+              <div class="header__contact-number"><span>Call </span>0800 129 9123</div>
             </a>
             <div class="header__social-container">
               <a class="header__social-link" aria-label="Instagram" target="_blank" href="https://www.instagram.com/apollori_co_uk/?igsh=OG96aXFrbHQ1MG55">

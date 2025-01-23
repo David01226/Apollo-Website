@@ -25,7 +25,7 @@ class Footer extends HTMLElement {
             <img src="/img/global/apollo_logo_dark_desktop.png" alt="Apollo Logo">
           </a>
           <div class="footer__contact">
-            <a class="footer__mob" href="tel:07725750573">+44 7725 750573</a>
+            <a class="footer__mob" href="tel:0800 129 9123">0800 129 9123</a>
             <a class="footer__email" href="mailto:sales@apollori.co.uk">sales@apollori.co.uk</a>
           </div>
           <div class="footer__social-container">

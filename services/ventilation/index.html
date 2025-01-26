@@ -131,13 +131,8 @@
   <link rel="stylesheet" type="text/css" href="/css/global.css">
 
   <!-- Components -->
-  <script src="/js/components/header-nav.js" type="text/javascript" defer></script>
-  <script src="/js/components/service-selector.js" type="text/javascript" defer></script>
-  <script src="/js/components/featured-panel.js" type="text/javascript" defer></script>
-  <script src="/js/components/usp.js" type="text/javascript" defer></script>
-  <script src="/js/components/quote.js" type="text/javascript" defer></script>
-  <script src="/js/components/infinite-carousel.js" type="text/javascript" defer></script>
-  <script src="/js/components/footer-nav.js" type="text/javascript" defer></script>
+  <script src="/js/components/header-nav.js" type="text/javascript" defer=""></script>
+  <script src="/js/components/service-selector.js" type="text/javascript" defer=""></script>
 
   <!-- Javascript -->
   <script src="/js/mobile-nav.js" type="text/javascript" defer></script>
@@ -238,55 +233,70 @@
 <!-- Ventilation Section -->
 <section id="ventilation" class="content-section">
     <!-- Ventilation Intro -->
-    <featured-panel 
-    sectionColor="transparent"
-    imgPosition="img-right"
-    img="/img/ventilation/condensation.jpg"
-    altTag="Condensation building up on window glass"
-    imgSize="contain"
-    imgPaddingClass="desktopImgPadding"
-    bodyText="Experience a breath of fresh air with our ventilation solutions. From bathroom and kitchen extractor fans to roof tile vents, our systems prioritise indoor air quality. Proper ventilation not only prevents issues like mould but also ensures a healthy living environment.
+    <featured-panel>
+    <div class="featured-panel img-right contain transparent ">
+    <div class="featured-panel__wrapper page-wrapper">
+      <div class="featured-panel__text-container">
+        
+          <p class="featured-panel__body-text">Experience a breath of fresh air with our ventilation solutions. From bathroom and kitchen extractor fans to roof tile vents, our systems prioritise indoor air quality. Proper ventilation not only prevents issues like mould but also ensures a healthy living environment.
     <br><br>
-    Our solutions are meticulously designed to provide efficient airflow, expelling pollutants and maintaining optimal humidity levels. Choose our ventilation systems for a home that breathes, promoting well-being and longevity."
-    btnStyle="btn-dark"
-    btn1Text="View Our Work"
-    btn1Link="/pages/our-work"
-    >
-  </featured-panel>
+    Our solutions are meticulously designed to provide efficient airflow, expelling pollutants and maintaining optimal humidity levels. Choose our ventilation systems for a home that breathes, promoting well-being and longevity.</p>
+
+        <div class="featured-panel__btn-container">
+          <a class="btn btn-dark" href="/pages/our-work" aria-label="Link button to View Our Work">View Our Work</a>
+          
+          </div>
+      </div>
+      <div class="featured-panel__img-container desktopImgPadding">
+        <img src="/img/ventilation/condensation.jpg" alt="Condensation building up on window glass">
+      </div>
+      </div>
+    </div>
+    </featured-panel>
   
   <!-- Ventilation Section -->
-  <featured-panel 
-    sectionColor="dark"
-    imgPosition="img-left"
-    img="/img/global/ventilation.png"
-    loading="lazy"
-    altTag="Extractor Fan"
-    sectionTitle="Extraction Fans"
-    bodyText="Transform your kitchen and bathroom experience with our expert extraction fan installation service. Our fans operate by drawing in air and expelling moisture, cooking odors, and pollutants outside, preventing mould and maintaining pristine air quality. 
+  <featured-panel>
+    <div class="featured-panel img-left null dark ">
+    <div class="featured-panel__wrapper page-wrapper">
+      <div class="featured-panel__text-container">
+        <h2 class="featured-panel__title">Extraction Fans</h2>
+          <p class="featured-panel__body-text">Transform your kitchen and bathroom experience with our expert extraction fan installation service. Our fans operate by drawing in air and expelling moisture, cooking odors, and pollutants outside, preventing mould and maintaining pristine air quality. 
     <br><br>
-    Efficient and discreet, our installations ensure a healthier living space. Experience the benefits of reduced humidity, enhanced ventilation, and a fresher atmosphere. Elevate your home environment with our extraction fan solutions, where functionality meets seamless integration for kitchens and bathrooms alike."
-    btnStyle="btn-dark"
-    btn1Text="Get a free quote"
-    btn1Link="/pages/contact"
-    >
-  </featured-panel>
+    Efficient and discreet, our installations ensure a healthier living space. Experience the benefits of reduced humidity, enhanced ventilation, and a fresher atmosphere. Elevate your home environment with our extraction fan solutions, where functionality meets seamless integration for kitchens and bathrooms alike.</p>
+
+        <div class="featured-panel__btn-container">
+          <a class="btn btn-dark" href="/pages/contact" aria-label="Link button to Get a free quote">Get a free quote</a>
+          
+          </div>
+      </div>
+      <div class="featured-panel__img-container ">
+        <img src="/img/global/ventilation.png" alt="Extractor Fan" loading="lazy">
+      </div>
+      </div>
+    </div>
+    </featured-panel>
 
   <!-- Ventilation Section -->
-  <featured-panel 
-    sectionColor="light"
-    imgPosition="img-right"
-    img="/img/ventilation/roof-vent.jpg"
-    loading="lazy"
-    altTag="Roof tile vent"
-    sectionTitle="Roof Tile Vents"
-    bodyText="Elevate your home's well-being with our expert roof tile vent installation service. Our vents work by facilitating passive airflow, expelling trapped heat and moisture, preventing attic issues, and maintaining a balanced indoor environment. 
+  <featured-panel>
+    <div class="featured-panel img-right null light ">
+    <div class="featured-panel__wrapper page-wrapper">
+      <div class="featured-panel__text-container">
+        <h2 class="featured-panel__title">Roof Tile Vents</h2>
+          <p class="featured-panel__body-text">Elevate your home's well-being with our expert roof tile vent installation service. Our vents work by facilitating passive airflow, expelling trapped heat and moisture, preventing attic issues, and maintaining a balanced indoor environment. 
     <br><br>
-    Enjoy energy efficiency, reduced utility costs, and enhanced structural longevity. Choose our roof tile vent installations for an eco-friendly solution that harmonizes with your roofing, ensuring a comfortable and resilient living space."
-    btnStyle="btn-light"
-    btn1Text="Enquire Now"
-    btn1Link="/pages/contact"
-    >
-  </featured-panel>
+    Enjoy energy efficiency, reduced utility costs, and enhanced structural longevity. Choose our roof tile vent installations for an eco-friendly solution that harmonizes with your roofing, ensuring a comfortable and resilient living space.</p>
+
+        <div class="featured-panel__btn-container">
+          <a class="btn btn-light" href="/pages/contact" aria-label="Link button to Enquire Now">Enquire Now</a>
+          
+          </div>
+      </div>
+      <div class="featured-panel__img-container ">
+        <img src="/img/ventilation/roof-vent.jpg" alt="Roof tile vent" loading="lazy">
+      </div>
+      </div>
+    </div>
+    </featured-panel>
   
 </section>
 
@@ -312,10 +322,99 @@
   </div>
 </section>
 
-<infinite-carousel></infinite-carousel>
+<infinite-carousel>
+    <style>
+      @keyframes slide {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-100%);
+        }
+      }
+
+      .infinite-carousel__title {font-weight: 400; font-size: 16px; text-transform: uppercase; padding: 40px 0 0; margin: 0; background-color: var(--primary-background-light); text-align: center;}
+      .infinite-carousel__container {overflow: hidden; white-space: nowrap; display: flex; background-color: var(--primary-background-light);}
+      .infinite-carousel__img-wrapper {display: flex; align-items: center; margin: 40px 0; animation: 60s slide infinite linear; flex-shrink: 0; animation-delay: 3s;}
+      .infinite-carousel__img {padding: 0 20px; max-height: 80px;}
+      @media screen and (max-width:767px) {
+        .infinite-carousel__img {width: calc(100vw / 3); padding: 0 10px;}
+      }    
+    </style>
+
+  
+      <div class="infinite-carousel__title">Our Accreditations &amp; Associations</div>
+      <div class="infinite-carousel__container">
+        <div class="infinite-carousel__img-wrapper">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/city-guilds.jpg" alt="City Guilds Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/renewable-energy-hub.jpg" alt="The Renewable Energy Hub">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/canadian-solar.jpg" alt="Canadian Solar Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/givenergy.jpg" alt="Give Energy Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/napit.jpg" alt="Napit Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/site-safe.jpg" alt="Site Safe Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/solar-edge.jpg" alt="Solar Edge Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/solis.jpg" alt="Solis Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/tesla.jpg" alt="Tesla Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/jym.jpg" alt="JYM Roofing Logo">
+            </div>
+            <div class="infinite-carousel__img-wrapper">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/city-guilds.jpg" alt="City Guilds Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/renewable-energy-hub.jpg" alt="The Renewable Energy Hub">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/canadian-solar.jpg" alt="Canadian Solar Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/givenergy.jpg" alt="Give Energy Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/napit.jpg" alt="Napit Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/site-safe.jpg" alt="Site Safe Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/solar-edge.jpg" alt="Solar Edge Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/solis.jpg" alt="Solis Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/tesla.jpg" alt="Tesla Logo">
+            <img class="infinite-carousel__img" src="/img/global/accreditations/jym.jpg" alt="JYM Roofing Logo">
+        </div>
+      </div>
+   
+    </infinite-carousel>
 
 </main>
 
-<footer-nav></footer-nav>
+<footer-nav>
+  <footer>
+    <div class="footer__wrapper page-wrapper">
+      <img class="footer__absolute-logo" src="/img/global/apollo_logo_background_decor_footer.png" alt="Apollo logo background decoration in footer navigation menu">
+      <div class="footer__left">
+        <div class="footer__left-col1">
+          <a class="footer__nav-link" href="/services">Services</a>
+          <a class="footer__nav-link" href="/pages/our-work">Our Work</a>
+          <a class="footer__nav-link" href="/pages/about">About Us</a>
+          <a class="footer__nav-link" href="/pages/contact">Contact</a>
+        </div>
+        <div class="footer__left-col2">
+          <a class="footer__nav-link" href="/policies/cookie-policy">Cookie Policy</a>
+          <a class="footer__nav-link" href="/policies/privacy-policy">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer__right">
+        <a class="footer__homepage-link" href="/">
+          <img src="/img/global/apollo_logo_dark_desktop.png" alt="Apollo Logo">
+        </a>
+        <div class="footer__contact">
+          <a class="footer__mob" href="tel:0800 129 9123">0800 129 9123</a>
+          <a class="footer__email" href="mailto:sales@apollori.co.uk">sales@apollori.co.uk</a>
+        </div>
+        <div class="footer__social-container">
+          <a class="footer__social-link" aria-label="Instagram" target="_blank" href="https://www.instagram.com/apollori_co_uk/?igsh=OG96aXFrbHQ1MG55">
+            <svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" width="40px" height="40px" aria-hidden="true" focusable="false" class="icon icon-instagram" viewBox="0 0 20 20">
+              <path fill="currentColor" fill-rule="evenodd" d="M13.23 3.492c-.84-.037-1.096-.046-3.23-.046-2.144 0-2.39.01-3.238.055-.776.027-1.195.164-1.487.273a2.43 2.43 0 0 0-.912.593 2.486 2.486 0 0 0-.602.922c-.11.282-.238.702-.274 1.486-.046.84-.046 1.095-.046 3.23 0 2.134.01 2.39.046 3.229.004.51.097 1.016.274 1.495.145.365.319.639.602.913.282.282.538.456.92.602.474.176.974.268 1.479.273.848.046 1.103.046 3.238.046 2.134 0 2.39-.01 3.23-.046.784-.036 1.203-.164 1.486-.273.374-.146.648-.329.921-.602.283-.283.447-.548.602-.922.177-.476.27-.979.274-1.486.037-.84.046-1.095.046-3.23 0-2.134-.01-2.39-.055-3.229-.027-.784-.164-1.204-.274-1.495a2.43 2.43 0 0 0-.593-.913 2.604 2.604 0 0 0-.92-.602c-.284-.11-.703-.237-1.488-.273ZM6.697 2.05c.857-.036 1.131-.045 3.302-.045 1.1-.014 2.202.001 3.302.045.664.014 1.321.14 1.943.374a3.968 3.968 0 0 1 1.414.922c.41.397.728.88.93 1.414.23.622.354 1.279.365 1.942C18 7.56 18 7.824 18 10.005c0 2.17-.01 2.444-.046 3.292-.036.858-.173 1.442-.374 1.943-.2.53-.474.976-.92 1.423a3.896 3.896 0 0 1-1.415.922c-.51.191-1.095.337-1.943.374-.857.036-1.122.045-3.302.045-2.171 0-2.445-.009-3.302-.055-.849-.027-1.432-.164-1.943-.364a4.152 4.152 0 0 1-1.414-.922 4.128 4.128 0 0 1-.93-1.423c-.183-.51-.329-1.085-.365-1.943C2.009 12.45 2 12.167 2 10.004c0-2.161 0-2.435.055-3.302.027-.848.164-1.432.365-1.942a4.44 4.44 0 0 1 .92-1.414 4.18 4.18 0 0 1 1.415-.93c.51-.183 1.094-.33 1.943-.366Zm.427 4.806a4.105 4.105 0 1 1 5.805 5.805 4.105 4.105 0 0 1-5.805-5.805Zm1.882 5.371a2.668 2.668 0 1 0 2.042-4.93 2.668 2.668 0 0 0-2.042 4.93Zm5.922-5.942a.958.958 0 1 1-1.355-1.355.958.958 0 0 1 1.355 1.355Z" clip-rule="evenodd"></path>
+            </svg>
+          </a>
+          <a class="footer__social-link" aria-label="Facebook" target="_blank" href="https://www.facebook.com/apollorenewableinstallations">
+            <svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" width="40px" height="40px" aria-hidden="true" focusable="false" class="icon icon-facebook" viewBox="0 0 20 20">
+              <path fill="currentColor" d="M18 10.049C18 5.603 14.419 2 10 2c-4.419 0-8 3.603-8 8.049C2 14.067 4.925 17.396 8.75 18v-5.624H6.719v-2.328h2.03V8.275c0-2.017 1.195-3.132 3.023-3.132.874 0 1.79.158 1.79.158v1.98h-1.009c-.994 0-1.303.621-1.303 1.258v1.51h2.219l-.355 2.326H11.25V18c3.825-.604 6.75-3.933 6.75-7.951Z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</footer-nav>
+
 </body>
 </html>

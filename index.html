@@ -111,7 +111,6 @@
       }
     }
   </script>
-
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -144,11 +143,6 @@
   <!-- Components -->
   <script src="/js/components/header-nav.js" type="text/javascript" defer></script>
   <script src="/js/components/service-selector.js" type="text/javascript" defer></script>
-  <script src="/js/components/featured-panel.js" type="text/javascript" defer></script>
-  <script src="/js/components/usp.js" type="text/javascript" defer></script>
-  <script src="/js/components/quote.js" type="text/javascript" defer></script>
-  <script src="/js/components/infinite-carousel.js" type="text/javascript" defer></script>
-  <script src="/js/components/footer-nav.js" type="text/javascript" defer></script>
 
   <!-- Javascript -->
   <script src="/js/mobile-nav.js" type="text/javascript" defer></script>
@@ -161,382 +155,476 @@
 
 <body id="index-page">
 
-<!-- Background Logo -->
-<img class="fixed-background-logo-sun" style="top:64%; z-index: 1;" src="/img/global/apollo_sun_outline_gold.png" alt="Background image of Apollo logo">
+  <!-- Background Logo -->
+  <img class="fixed-background-logo-sun" style="top:64%; z-index: 1;" src="/img/global/apollo_sun_outline_gold.png" alt="Background image of Apollo logo">
 
-<!-- Header -->
-<header-nav></header-nav>
+  <!-- Header -->
+  <header-nav></header-nav>
 
-<!-- Mobile Nav -->
-<section class="mobile-nav" style="transition: all 0.2s linear;">
-  <div class="mobile-nav__menu page-wrapper">
-    <div class="mobile-nav__close-container">
-      <div class="mobile-nav__close-line left-line"></div>
-      <div class="mobile-nav__close-line right-line"></div>
-    </div>
-    <div class="mobile__nav__link-container">
-      <div>
-        <a class="mobile__nav-link" href="/pages/about">About Us</a>
-        <div class="mobile__nav-link-child-container">
-          <a class="mobile__nav-link-child" href="/pages/about">What We Do &nbsp&nbsp|</a>
-          <a class="mobile__nav-link-child" href="/pages/about#our-values">Our Values &nbsp&nbsp|</a>
-          <!-- <a class="mobile__nav-link-child" href="/pages/about#our-team">Our Team &nbsp&nbsp|</a> -->
-          <a class="mobile__nav-link-child" href="/pages/our-work">Our Work &nbsp&nbsp|</a>
-          <a class="mobile__nav-link-child" href="/pages/careers">Careers</a>
-        </div>
+  <!-- Mobile Nav -->
+  <section class="mobile-nav" style="transition: all 0.2s linear;">
+    <div class="mobile-nav__menu page-wrapper">
+      <div class="mobile-nav__close-container">
+        <div class="mobile-nav__close-line left-line"></div>
+        <div class="mobile-nav__close-line right-line"></div>
       </div>
-      <div>
-        <a class="mobile__nav-link" href="/services/#solar">Solar Power</a>
-        <div class="mobile__nav-link-child-container">
-          <a class="mobile__nav-link-child" href="/services/residential-solar">Residential Solar &nbsp&nbsp|</a>
-          <a class="mobile__nav-link-child" href="/services/commercial-solar">Commercial Solar</a>
-        </div>
-      </div>
-      <div>
-        <a class="mobile__nav-link" href="/services/">Services</a>
-        <div class="mobile__nav-link-child-container">
-          <a class="mobile__nav-link-child" href="/services/residential-solar">Residential Solar &nbsp&nbsp|</a>
-          <a class="mobile__nav-link-child" href="/services/commercial-solar">Commercial Solar &nbsp&nbsp|</a>
-          <a class="mobile__nav-link-child" href="/services/battery-storage">Battery Storage &nbsp&nbsp|</a>
-          <a class="mobile__nav-link-child" href="/services/ev-chargers">EV Chargers &nbsp&nbsp|</a>
-          <a class="mobile__nav-link-child" href="/services/roofing">Roofing &nbsp&nbsp|</a>
-          <a class="mobile__nav-link-child" href="/services/ventilation">Ventilation</a>
-        </div>
-      </div>
-      <div>
-        <a class="mobile__nav-link" href="/services/ev-chargers">EV Chargers</a>
-      </div>
-      <div>
-        <a class="mobile__nav-link" href="/products/">Products</a>
-        <div class="mobile__nav-link-child-container">
-          <a class="mobile__nav-link-child" href="/products/solar-panel-products">Solar Panels &nbsp&nbsp|</a>
-          <a class="mobile__nav-link-child" href="/products/battery-storage-products">Battery Storage &nbsp&nbsp|</a>
-          <a class="mobile__nav-link-child" href="/products/inverter-products">Inverters &nbsp&nbsp|</a>
-          <a class="mobile__nav-link-child" href="/products/optimiser-products">Optimisers &nbsp&nbsp|</a>
-          <a class="mobile__nav-link-child" href="/products/mounting-system-products">Mounting Systems &nbsp&nbsp|</a>
-          <a class="mobile__nav-link-child" href="/services/ev-chargers#our-chargers">EV Chargers</a>
-        </div>
-      </div>
-      <div>
-        <a class="mobile__nav-link" href="/pages/contact">Contact</a>
-      </div>
-    </div>
-  </div>
-  <div class="mobile-nav__wrapper page-wrapper">
-    <div class="mobile-nav__btn">
-        <div class="line line-top"></div>
-        <div class="line line-middle"></div>
-        <div class="line line-bottom"></div>
-    </div>
-    <a href="/" style="display: flex;">
-      <img class="mobile-nav__logo" src="/img/global/apollo_logo_dark_desktop.png" alt="Apollo Logo">
-    </a>
-    <div class="mobile-nav__background-decor">
-      <img src="/img/global/mob-nav-background.png" alt="Background image of Apollo Logo in mobile navigation menu">
-    </div>
-  </div>
-</section>
-
-<main id="main-content">
-
-  <!-- Homepage Hero -->
-  <section id="hero-splide" class="splide" aria-label="Splide Basic HTML Example">
-    <!-- <div class="hero-splide__overlay"></div> -->
-    <div class="hero-splide__text-container">
-        <div class="page-wrapper">
-          <div class="hero-splide__heading-container">
-            <h2>
-              Get connected and gain YOUR
-              <div><span>ENERGY</span> INDEPENDENCE</div>
-            </h2>
-          </div>
-          <div class="hero-splide__btn-container">
-              <a class="btn btn-dark" href="/services">Services</a>
-              <a class="btn btn-dark" href="/pages/contact">Get in Touch</a>
+      <div class="mobile__nav__link-container">
+        <div>
+          <a class="mobile__nav-link" href="/pages/about">About Us</a>
+          <div class="mobile__nav-link-child-container">
+            <a class="mobile__nav-link-child" href="/pages/about">What We Do &nbsp&nbsp|</a>
+            <a class="mobile__nav-link-child" href="/pages/about#our-values">Our Values &nbsp&nbsp|</a>
+            <!-- <a class="mobile__nav-link-child" href="/pages/about#our-team">Our Team &nbsp&nbsp|</a> -->
+            <a class="mobile__nav-link-child" href="/pages/our-work">Our Work &nbsp&nbsp|</a>
+            <a class="mobile__nav-link-child" href="/pages/careers">Careers</a>
           </div>
         </div>
+        <div>
+          <a class="mobile__nav-link" href="/services/#solar">Solar Power</a>
+          <div class="mobile__nav-link-child-container">
+            <a class="mobile__nav-link-child" href="/services/residential-solar">Residential Solar &nbsp&nbsp|</a>
+            <a class="mobile__nav-link-child" href="/services/commercial-solar">Commercial Solar</a>
+          </div>
+        </div>
+        <div>
+          <a class="mobile__nav-link" href="/services/">Services</a>
+          <div class="mobile__nav-link-child-container">
+            <a class="mobile__nav-link-child" href="/services/residential-solar">Residential Solar &nbsp&nbsp|</a>
+            <a class="mobile__nav-link-child" href="/services/commercial-solar">Commercial Solar &nbsp&nbsp|</a>
+            <a class="mobile__nav-link-child" href="/services/battery-storage">Battery Storage &nbsp&nbsp|</a>
+            <a class="mobile__nav-link-child" href="/services/ev-chargers">EV Chargers &nbsp&nbsp|</a>
+            <a class="mobile__nav-link-child" href="/services/roofing">Roofing &nbsp&nbsp|</a>
+            <a class="mobile__nav-link-child" href="/services/ventilation">Ventilation</a>
+          </div>
+        </div>
+        <div>
+          <a class="mobile__nav-link" href="/services/ev-chargers">EV Chargers</a>
+        </div>
+        <div>
+          <a class="mobile__nav-link" href="/products/">Products</a>
+          <div class="mobile__nav-link-child-container">
+            <a class="mobile__nav-link-child" href="/products/solar-panel-products">Solar Panels &nbsp&nbsp|</a>
+            <a class="mobile__nav-link-child" href="/products/battery-storage-products">Battery Storage &nbsp&nbsp|</a>
+            <a class="mobile__nav-link-child" href="/products/inverter-products">Inverters &nbsp&nbsp|</a>
+            <a class="mobile__nav-link-child" href="/products/optimiser-products">Optimisers &nbsp&nbsp|</a>
+            <a class="mobile__nav-link-child" href="/products/mounting-system-products">Mounting Systems &nbsp&nbsp|</a>
+            <a class="mobile__nav-link-child" href="/services/ev-chargers#our-chargers">EV Chargers</a>
+          </div>
+        </div>
+        <div>
+          <a class="mobile__nav-link" href="/pages/contact">Contact</a>
+        </div>
+      </div>
     </div>
-    <div class="splide__track">
-      <ul class="splide__list">
-        <li class="splide__slide">
-          <img class="desktop-hero" src="/img/index/Hero1Com.jpg" alt="Solar panels on a roof with ocean in the background">
-          <img class="mobile-hero" src="/img/index/Hero1-mobileCom.jpg" alt="Solar panels on a roof with ocean in the background">
-        </li>
-        <li class="splide__slide">
-          <img class="desktop-hero" src="/img/index/Hero2Com.jpg" alt="Solar panels on a commercial roof with city in the background">
-          <img class="mobile-hero" src="/img/index/Hero2-mobileCom.jpg" alt="Solar panels on a commercial roof with city in the background">
-        </li>
-        <li class="splide__slide">
-          <img class="desktop-hero" src="/img/index/Hero3Com.jpg" alt="Solar panels on a commercial roof with city background">
-          <img class="mobile-hero" src="/img/index/Hero3-mobileCom.jpg" alt="Solar panels on a commercial roof with city background">
-        </li>
-        <li class="splide__slide">
-          <img class="desktop-hero" src="/img/index/Hero4Com.jpg" loading="lazy" alt="Solar panels on a commercial roof with surrounding neighbourhood in the background">
-          <img class="mobile-hero" src="/img/index/Hero4-mobileCom.jpg" loading="lazy" alt="Solar panels on a commercial roof with surrounding neighbourhood in the background">
-        </li>
-        <li class="splide__slide">
-          <img class="desktop-hero" src="/img/index/Hero5Com.jpg" loading="lazy" alt="Solar panels on a commercial roof with surrounding town in the background">
-          <img class="mobile-hero" src="/img/index/Hero5-mobileCom.jpg" loading="lazy" alt="Solar panels on a commercial roof with surrounding town in the background">
-        </li>
-        <li class="splide__slide">
-          <img class="desktop-hero" src="/img/index/Hero6Com.jpg" loading="lazy" alt="Solar panels on a roof with surrounding countryside in the background">
-          <img class="mobile-hero" src="/img/index/Hero6-mobileCom.jpg" loading="lazy" alt="Solar panels on a roof with surrounding countryside in the background">
-        </li>
-        <!-- <li class="splide__slide">
-          <img class="desktop-hero" src="/img/index/Hero7Com.jpg" loading="lazy" alt="Solar panels on a roof with rows of terraced houses in the background">
-          <img class="mobile-hero" src="/img/index/Hero7-mobileCom.jpg" loading="lazy" alt="Solar panels on a roof with rows of terraced houses in the background">
-        </li> -->
-        <li class="splide__slide">
-          <img class="desktop-hero" src="/img/index/Hero8Com.jpg" loading="lazy" alt="Solar panels on a roof with ocean in the background">
-          <img class="mobile-hero" src="/img/index/Hero8-mobileCom.jpg" loading="lazy" alt="Solar panels on a roof with ocean in the background">
-        </li>
-      </ul>
-    </div>
-    <div class="scroll-btn-wrapper">
-      <a class="scroll-btn-link" href="#how-can-we-help" aria-label="Scroll down button">
-       <div class="scroll-btn-elem"></div> 
+    <div class="mobile-nav__wrapper page-wrapper">
+      <div class="mobile-nav__btn">
+          <div class="line line-top"></div>
+          <div class="line line-middle"></div>
+          <div class="line line-bottom"></div>
+      </div>
+      <a href="/" style="display: flex;">
+        <img class="mobile-nav__logo" src="/img/global/apollo_logo_dark_desktop.png" alt="Apollo Logo">
       </a>
+      <div class="mobile-nav__background-decor">
+        <img src="/img/global/mob-nav-background.png" alt="Background image of Apollo Logo in mobile navigation menu">
+      </div>
     </div>
   </section>
 
-<!-- Title Section -->
-<section id="how-can-we-help" style="background-color: var(--primary-background-light);" class="title-section">
-  <div style="padding: 0 0 40px;" class="title-section__wrapper page-wrapper">
-      <h2 class="title-section__title-elem">How Can We Help You?</h2>
-  </div>
-</section>
+  <main id="main-content">
 
-  <!-- Service Selector -->
-<service-selector
-servicePage='true'
->
-</service-selector>
-
-  <!-- How Can We Help? -->
-  <!-- <section class="help-section">
-    <div class="help-section__wrapper page-wrapper">
-      <h2 class="help-section__title">How Can We Help You?</h2>
-      <div class="help-section__card-container">
-        <div class="help-section__card">
-            <h3 class="help-section__card-title">Solar Power</h3>
-            <img class="help-section__card-img" src="/img/index/help_solar.png" alt="">
-            <div class="help-section__card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
-            <a class="btn btn-light" href="/services">Find Out More</a>
-        </div>
-        <div class="help-section__card">
-            <h3 class="help-section__card-title">Battery Storage</h3>
-            <img class="help-section__card-img" src="/img/index/help_heat_pump.png" alt="">
-            <div class="help-section__card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</div>
-            <a class="btn btn-light" href="/services">Find Out More</a>
-        </div>
-        <div class="help-section__card">
-            <h3 class="help-section__card-title">EV Chargers</h3>
-            <img class="help-section__card-img" src="/img/index/help_ventilation.png" alt="">
-            <div class="help-section__card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</div>
-            <a class="btn btn-light" href="/services">Find Out More</a>
+    <!-- Homepage Hero -->
+    <section id="hero-splide" class="splide" aria-label="Splide Basic HTML Example">
+      <!-- <div class="hero-splide__overlay"></div> -->
+      <div class="hero-splide__text-container">
+          <div class="page-wrapper">
+            <div class="hero-splide__heading-container">
+              <h2>
+                Get connected and gain YOUR
+                <div><span>ENERGY</span> INDEPENDENCE</div>
+              </h2>
+            </div>
+            <div class="hero-splide__btn-container">
+                <a class="btn btn-dark" href="/services">Services</a>
+                <a class="btn btn-dark" href="/pages/contact">Get in Touch</a>
+            </div>
           </div>
       </div>
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img class="desktop-hero" src="/img/index/Hero1Com.jpg" alt="Solar panels on a roof with ocean in the background">
+            <img class="mobile-hero" src="/img/index/Hero1-mobileCom.jpg" alt="Solar panels on a roof with ocean in the background">
+          </li>
+          <li class="splide__slide">
+            <img class="desktop-hero" src="/img/index/Hero2Com.jpg" alt="Solar panels on a commercial roof with city in the background">
+            <img class="mobile-hero" src="/img/index/Hero2-mobileCom.jpg" alt="Solar panels on a commercial roof with city in the background">
+          </li>
+          <li class="splide__slide">
+            <img class="desktop-hero" src="/img/index/Hero3Com.jpg" alt="Solar panels on a commercial roof with city background">
+            <img class="mobile-hero" src="/img/index/Hero3-mobileCom.jpg" alt="Solar panels on a commercial roof with city background">
+          </li>
+          <li class="splide__slide">
+            <img class="desktop-hero" src="/img/index/Hero4Com.jpg" loading="lazy" alt="Solar panels on a commercial roof with surrounding neighbourhood in the background">
+            <img class="mobile-hero" src="/img/index/Hero4-mobileCom.jpg" loading="lazy" alt="Solar panels on a commercial roof with surrounding neighbourhood in the background">
+          </li>
+          <li class="splide__slide">
+            <img class="desktop-hero" src="/img/index/Hero5Com.jpg" loading="lazy" alt="Solar panels on a commercial roof with surrounding town in the background">
+            <img class="mobile-hero" src="/img/index/Hero5-mobileCom.jpg" loading="lazy" alt="Solar panels on a commercial roof with surrounding town in the background">
+          </li>
+          <li class="splide__slide">
+            <img class="desktop-hero" src="/img/index/Hero6Com.jpg" loading="lazy" alt="Solar panels on a roof with surrounding countryside in the background">
+            <img class="mobile-hero" src="/img/index/Hero6-mobileCom.jpg" loading="lazy" alt="Solar panels on a roof with surrounding countryside in the background">
+          </li>
+          <li class="splide__slide">
+            <img class="desktop-hero" src="/img/index/Hero8Com.jpg" loading="lazy" alt="Solar panels on a roof with ocean in the background">
+            <img class="mobile-hero" src="/img/index/Hero8-mobileCom.jpg" loading="lazy" alt="Solar panels on a roof with ocean in the background">
+          </li>
+        </ul>
+      </div>
+      <div class="scroll-btn-wrapper">
+        <a class="scroll-btn-link" href="#how-can-we-help" aria-label="Scroll down button">
+        <div class="scroll-btn-elem"></div> 
+        </a>
+      </div>
+    </section>
 
-    </div>
-  </section> -->
+    <!-- Title Section -->
+    <section id="how-can-we-help" style="background-color: var(--primary-background-light);" class="title-section">
+      <div style="padding: 0 0 40px;" class="title-section__wrapper page-wrapper">
+          <h2 class="title-section__title-elem">How Can We Help You?</h2>
+      </div>
+    </section>
 
-  <!-- About Us Panel -->
-  <featured-panel 
-    sectionColor="light"
-    imgPosition="img-right"
-    img="/img/global/about-us-panel.jpg"
-    imgSize="contain"
-    imgPaddingClass="desktopImgPadding"
-    loading="lazy"
-    altTag="Apollo team photo"
-    sectionTitle="About Apollo"
-    bodyText="At Apollo Renewable Installations, we are passionate about making a positive change in the world, harnessing renewable resources to help people power their lives.
-    <br><br>
-    Our in-house professionals have a wealth of knowledge & experience in the renewable energy sector. Our goal is to assist customers in achieving a more cost efficient and sustainable future by reducing their energy bills and carbon footprint.
-    <br><br>
-    We offer a comprehensive range of services and pride ourselves on making Solar Power more accessible to homeowners and businesses across the country.
-    "
-    btnStyle="btn-light"
-    btn1Text="Our Services"
-    btn1Link="/services/"
-    btn2Text="Learn More"
-    btn2Link="/pages/about"
+    <!-- Service Selector -->
+    <service-selector
+    servicePage='true'
     >
-  </featured-panel>
+    </service-selector>
 
-  <!-- Quote -->
-  <quote-section 
-    quote="Every 24 hours, enough sunlight touches the earth to provide energy for the entire planet for 24 years." 
-    author="- Martha Maeda"
-    >
-  </quote-section>
+    <!-- About Us Panel -->
+    <featured-panel>
+      <div class="featured-panel img-right contain light ">
+        <div class="featured-panel__wrapper page-wrapper">
+          <div class="featured-panel__text-container">
+            <h2 class="featured-panel__title">About Apollo</h2>
+            <p class="featured-panel__body-text">At Apollo Renewable Installations, we are passionate about making a positive change in the world, harnessing renewable resources to help people power their lives.
+            <br><br>
+            Our in-house professionals have a wealth of knowledge &amp; experience in the renewable energy sector. Our goal is to assist customers in achieving a more cost efficient and sustainable future by reducing their energy bills and carbon footprint.
+            <br><br>
+            We offer a comprehensive range of services and pride ourselves on making Solar Power more accessible to homeowners and businesses across the country.
+            </p>
 
-  <!-- Solar Panel -->
-  <featured-panel 
-    sectionColor="dark"
-    imgPosition="img-left"
-    img="/img/index/solar-panel.jpg"
-    altTag="Front view of a house with solar panels on the roof"
-    loading="lazy"
-    sectionTitle="Solar Installation"
-    bodyText="Our highly qualified professionals have helped hundreds of businesses and homeowners save money on their energy bills and move closer to energy independence. Find out how you can reduce your energy bills."
-    btnStyle="btn-dark"
-    btn1Text="Learn More"
-    btn1Link="/services/solar-power"
-    >
-  </featured-panel>
-
-  
-  <!-- Battery Storage Panel -->
-  <featured-panel 
-  sectionColor="light"
-  imgPosition="img-right"
-  img="/img/index/battery-panel.jpg"
-  altTag="Battery storage unit on a wall inside a house"
-  loading="lazy"
-  sectionTitle="Battery Storage"
-  bodyText="Homeowners and businesses can maximise their energy savings by adding battery storage. This ensures that unused power generated during the day is stored for future use, when generation is lower.
-  "
-  btnStyle="btn-light"
-  btn1Text="Learn More"
-  btn1Link="/services/battery-storage"
-  >
-</featured-panel>
-
-<!-- Quote -->
-<quote-section 
-  quote="We have this handy fusion reactor in the sky called the sun; you don’t have to do anything, it just works. It shows up every day." 
-  author="- Elon Musk"
-  >
-</quote-section>
-
-  <!-- Benefits of Solar -->
-  <usp-panel
-    sectionIdentifier="benefits-of-solar"
-    sectionColor="dark"
-    sectionTitle="Benefits of Solar"
-    items='[
-      {
-        "img": "", 
-        "svg": "<svg xmlns=\"https://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><path d=\"M320 96H192L144.6 24.9C137.5 14.2 145.1 0 157.9 0H354.1c12.8 0 20.4 14.2 13.3 24.9L320 96zM192 128H320c3.8 2.5 8.1 5.3 13 8.4C389.7 172.7 512 250.9 512 416c0 53-43 96-96 96H96c-53 0-96-43-96-96C0 250.9 122.3 172.7 179 136.4l0 0 0 0c4.8-3.1 9.2-5.9 13-8.4zm84 88c0-11-9-20-20-20s-20 9-20 20v14c-7.6 1.7-15.2 4.4-22.2 8.5c-13.9 8.3-25.9 22.8-25.8 43.9c.1 20.3 12 33.1 24.7 40.7c11 6.6 24.7 10.8 35.6 14l1.7 .5c12.6 3.8 21.8 6.8 28 10.7c5.1 3.2 5.8 5.4 5.9 8.2c.1 5-1.8 8-5.9 10.5c-5 3.1-12.9 5-21.4 4.7c-11.1-.4-21.5-3.9-35.1-8.5c-2.3-.8-4.7-1.6-7.2-2.4c-10.5-3.5-21.8 2.2-25.3 12.6s2.2 21.8 12.6 25.3c1.9 .6 4 1.3 6.1 2.1l0 0 0 0c8.3 2.9 17.9 6.2 28.2 8.4V424c0 11 9 20 20 20s20-9 20-20V410.2c8-1.7 16-4.5 23.2-9c14.3-8.9 25.1-24.1 24.8-45c-.3-20.3-11.7-33.4-24.6-41.6c-11.5-7.2-25.9-11.6-37.1-15l0 0-.7-.2c-12.8-3.9-21.9-6.7-28.3-10.5c-5.2-3.1-5.3-4.9-5.3-6.7c0-3.7 1.4-6.5 6.2-9.3c5.4-3.2 13.6-5.1 21.5-5c9.6 .1 20.2 2.2 31.2 5.2c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-6.5-1.7-13.7-3.4-21.1-4.7V216z\"/></svg>",
-        "title": "Reduces<br>Electricity Bill", 
-        "body": ""
-      },
-      {
-        "img": "", 
-        "svg": "<svg xmlns=\"https://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><path d=\"M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z\"/></svg>",
-        "title": "Increases<br>Property Value", 
-        "body": ""
-      },
-      {
-        "img": "", 
-        "svg": "<svg xmlns=\"https://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><path d=\"M512 32c0 113.6-84.6 207.5-194.2 222c-7.1-53.4-30.6-101.6-65.3-139.3C290.8 46.3 364 0 448 0h32c17.7 0 32 14.3 32 32zM0 96C0 78.3 14.3 64 32 64H64c123.7 0 224 100.3 224 224v32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V320C100.3 320 0 219.7 0 96z\"/></svg>",
-        "title": "Environmentally<br>Friendly", 
-        "body": ""
-      },
-      {
-        "img": "", 
-        "svg": "<svg xmlns=\"https://www.w3.org/2000/svg\" viewBox=\"0 0 576 512\"><path d=\"M384 352c-17.7 0-32 14.3-32 32s14.3 32 32 32H544c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32s-32 14.3-32 32v82.7L342.6 137.4c-12.5-12.5-32.8-12.5-45.3 0L192 242.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0L320 205.3 466.7 352H384z\"/></svg>",
-        "title": "Increasingly<br>Affordable", 
-        "body": ""
-      },
-      {
-        "img": "", 
-        "svg": "<svg xmlns=\"https://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><path d=\"M320 64A64 64 0 1 0 192 64a64 64 0 1 0 128 0zm-96 96c-35.3 0-64 28.7-64 64v48c0 17.7 14.3 32 32 32h1.8l11.1 99.5c1.8 16.2 15.5 28.5 31.8 28.5h38.7c16.3 0 30-12.3 31.8-28.5L318.2 304H320c17.7 0 32-14.3 32-32V224c0-35.3-28.7-64-64-64H224zM132.3 394.2c13-2.4 21.7-14.9 19.3-27.9s-14.9-21.7-27.9-19.3c-32.4 5.9-60.9 14.2-82 24.8c-10.5 5.3-20.3 11.7-27.8 19.6C6.4 399.5 0 410.5 0 424c0 21.4 15.5 36.1 29.1 45c14.7 9.6 34.3 17.3 56.4 23.4C130.2 504.7 190.4 512 256 512s125.8-7.3 170.4-19.6c22.1-6.1 41.8-13.8 56.4-23.4c13.7-8.9 29.1-23.6 29.1-45c0-13.5-6.4-24.5-14-32.6c-7.5-7.9-17.3-14.3-27.8-19.6c-21-10.6-49.5-18.9-82-24.8c-13-2.4-25.5 6.3-27.9 19.3s6.3 25.5 19.3 27.9c30.2 5.5 53.7 12.8 69 20.5c3.2 1.6 5.8 3.1 7.9 4.5c3.6 2.4 3.6 7.2 0 9.6c-8.8 5.7-23.1 11.8-43 17.3C374.3 457 318.5 464 256 464s-118.3-7-157.7-17.9c-19.9-5.5-34.2-11.6-43-17.3c-3.6-2.4-3.6-7.2 0-9.6c2.1-1.4 4.8-2.9 7.9-4.5c15.3-7.7 38.8-14.9 69-20.5z\"/></svg>",
-        "title": "Energy<br>Independence", 
-        "body": ""
-      },
-      {
-        "img": "", 
-        "svg": "<svg xmlns=\"https://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d=\"M352 320c88.4 0 160-71.6 160-160c0-15.3-2.2-30.1-6.2-44.2c-3.1-10.8-16.4-13.2-24.3-5.3l-76.8 76.8c-3 3-7.1 4.7-11.3 4.7H336c-8.8 0-16-7.2-16-16V118.6c0-4.2 1.7-8.3 4.7-11.3l76.8-76.8c7.9-7.9 5.4-21.2-5.3-24.3C382.1 2.2 367.3 0 352 0C263.6 0 192 71.6 192 160c0 19.1 3.4 37.5 9.5 54.5L19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L297.5 310.5c17 6.2 35.4 9.5 54.5 9.5zM80 408a24 24 0 1 1 0 48 24 24 0 1 1 0-48z\"/></svg>",
-        "title": "Low<br>Maintenance", 
-        "body": ""
-      }
-    ]'
-    btnStyle="btn-dark"
-    btnText="Find Out More"
-    btnLink="/services/solar-power#benefits-of-solar"
-    >
-  </usp-panel>
-
-  <!-- Quote -->
-  <quote-section 
-    quote="We are like tenant farmers chopping down the fence around our house for fuel when we should be using more of nature’s inexhaustible source of energy - the sun." 
-    author="- Thomas Edison"
-    bgColor="has-bg-color"
-    >
-  </quote-section>
-
-  <!-- EV Chargers -->
-    <featured-panel 
-    sectionColor="dark"
-    imgPosition="img-left"
-    img="/img/ev-chargers/ev-charger-pod-point.jpg"
-    sectionMarginClasses="marginDesktop marginMobile"
-    altTag="EV charger with a car in the background"
-    loading="lazy"
-    sectionTitle="EV Chargers"
-    bodyText="Discover the future of driving! Explore the innovation behind our range electric vehicle chargers – fast, efficient, and environmentally conscious. Elevate your driving experience now and embrace the green revolution."
-    btnStyle="btn-dark"
-    btn1Text="Learn More"
-    btn1Link="/services/ev-chargers"
-    >
-  </featured-panel>
-
-  <!-- Follow Our Instagram -->
-  <section class="instagram">
-    <div class="instagram__wrapper page-wrapper">
-        <h2 class="instagram__section-title">Follow Our Instagram</h2>
-        <div class="instagram__img-container">
-            <div class="instagram__img">
-                <img src="/img/global/insta1.jpg" alt="Instagram image 1 of 4" loading="lazy">
-            </div>
-            <div class="instagram__img">
-                <img src="/img/global/insta2.jpg" alt="Instagram image 2 of 4" loading="lazy">
-            </div>
-            <div class="instagram__img">
-                <img src="/img/global/insta3.jpg" alt="Instagram image 3 of 4" loading="lazy">
-            </div>
-            <div class="instagram__img">
-                <img src="/img/global/insta4.jpg" alt="Instagram image 4 of 4" loading="lazy">
-            </div>
+            <div class="featured-panel__btn-container">
+              <a class="btn btn-light" href="/services/" aria-label="Link button to Our Services">Our Services</a>
+              <a class="btn btn-light" href="/pages/about" aria-label="Link button to Learn More">Learn More</a>
+              </div>
+          </div>
+          <div class="featured-panel__img-container desktopImgPadding">
+            <img src="/img/global/about-us-panel.jpg" alt="Apollo team photo" loading="lazy">
+          </div>
         </div>
-        <a href="https://www.instagram.com/apollori_co_uk/?igsh=OG96aXFrbHQ1MG55" class="btn btn-light" target="_blank">View Latest Projects</a>
-    </div>
-  </section>
+      </div>
+    </featured-panel>
 
-  <!-- SEO Section -->
-  <section class="seo__container">
-    <div class="seo__wrapper page-wrapper">
-      <h1>Apollo Renewable Installations | Apollo Solar Energy</h1>
-      <!-- <p>Our team at Apollo are experts in the installation, maintenance and repair of both residential and commercial Solar Panels, Battery Storage, EV Chargers and more.</p> -->
-    </div>
-  </section>
+    <!-- Quote -->
+    <quote-section>
+      <div class="quote null ">
+        <div class="quote__wrapper page-wrapper">
+          <div class="quote__text">“Every 24 hours, enough sunlight touches the earth to provide energy for the entire planet for 24 years.”</div>
+          <div class="quote__author">- Martha Maeda</div>
+        </div>
+      </div>
+    </quote-section>
 
+    <!-- Solar Panel -->
+    <featured-panel>
+      <div class="featured-panel img-left null dark ">
+        <div class="featured-panel__wrapper page-wrapper">
+          <div class="featured-panel__text-container">
+            <h2 class="featured-panel__title">Solar Installation</h2>
+              <p class="featured-panel__body-text">Our highly qualified professionals have helped hundreds of businesses and homeowners save money on their energy bills and move closer to energy independence. Find out how you can reduce your energy bills.</p>
 
-  <!-- Infinite Accreditation Carousel -->
-  <infinite-carousel></infinite-carousel>
+            <div class="featured-panel__btn-container">
+              <a class="btn btn-dark" href="/services/#solar" aria-label="Link button to Learn More">Learn More</a>
+              
+              </div>
+          </div>
+          <div class="featured-panel__img-container ">
+            <img src="/img/index/solar-panel.jpg" alt="Front view of a house with solar panels on the roof" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </featured-panel>
+    
+    <!-- Battery Storage Panel -->
+    <featured-panel>
+      <div class="featured-panel img-right null light ">
+        <div class="featured-panel__wrapper page-wrapper">
+          <div class="featured-panel__text-container">
+            <h2 class="featured-panel__title">Battery Storage</h2>
+              <p class="featured-panel__body-text">Homeowners and businesses can maximise their energy savings by adding battery storage. This ensures that unused power generated during the day is stored for future use, when generation is lower.</p>
 
-</main>
+            <div class="featured-panel__btn-container">
+              <a class="btn btn-light" href="/services/battery-storage" aria-label="Link button to Learn More">Learn More</a> 
+            </div>
+          </div>
+          <div class="featured-panel__img-container ">
+            <img src="/img/index/battery-panel.jpg" alt="Battery storage unit on a wall inside a house" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </featured-panel>
 
-<!-- Footer -->
-<footer-nav></footer-nav>
+    <!-- Quote -->
+    <quote-section>
+      <div class="quote null ">
+        <div class="quote__wrapper page-wrapper">
+          <div class="quote__text">“We have this handy fusion reactor in the sky called the sun; you don’t have to do anything, it just works. It shows up every day.”</div>
+          <div class="quote__author">- Elon Musk</div>
+        </div>
+      </div>
+    </quote-section>
 
-<script>
-  // Hero Splide
-  var splide = new Splide( '#hero-splide' , {
-    type: 'fade',
-    perPage: 1,
-    arrows:false,
-    pagination:false,
-    autoplay:true, 
-    pauseOnFocus:false,
-    pauseOnHover:false, 
-    interval: 7000,
-    speed: 3000,
-    rewind: true,
-    preloadPages: 1,
-  } ).mount();
-</script>
+    <!-- Benefits of Solar -->
+    <usp-panel>
+      <style>
+      #benefits-of-solar .usp__item-container {grid-template-columns: repeat(6, 1fr);}
+      @media only screen and (max-width: 1024px) {
+        #benefits-of-solar .usp__item-container {grid-template-columns: repeat(3, 1fr); gap: 40px 10px;}
+      }
+      @media only screen and (max-width: 767px) {
+        #benefits-of-solar .usp__item-container {grid-template-columns: repeat(2, 1fr); gap: 40px 0;}
+      }
+      </style>
+      <div id="benefits-of-solar" class="usp__container dark ">
+        <div class="usp__wrapper page-wrapper">
+          <div class="usp__title-container">
+            <h2 class="usp__section-title">Benefits of Solar</h2>
+            
+          </div>
+          <div class="usp__item-container">
+          
+                <div class="usp__item">
+                  
+                  <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M320 96H192L144.6 24.9C137.5 14.2 145.1 0 157.9 0H354.1c12.8 0 20.4 14.2 13.3 24.9L320 96zM192 128H320c3.8 2.5 8.1 5.3 13 8.4C389.7 172.7 512 250.9 512 416c0 53-43 96-96 96H96c-53 0-96-43-96-96C0 250.9 122.3 172.7 179 136.4l0 0 0 0c4.8-3.1 9.2-5.9 13-8.4zm84 88c0-11-9-20-20-20s-20 9-20 20v14c-7.6 1.7-15.2 4.4-22.2 8.5c-13.9 8.3-25.9 22.8-25.8 43.9c.1 20.3 12 33.1 24.7 40.7c11 6.6 24.7 10.8 35.6 14l1.7 .5c12.6 3.8 21.8 6.8 28 10.7c5.1 3.2 5.8 5.4 5.9 8.2c.1 5-1.8 8-5.9 10.5c-5 3.1-12.9 5-21.4 4.7c-11.1-.4-21.5-3.9-35.1-8.5c-2.3-.8-4.7-1.6-7.2-2.4c-10.5-3.5-21.8 2.2-25.3 12.6s2.2 21.8 12.6 25.3c1.9 .6 4 1.3 6.1 2.1l0 0 0 0c8.3 2.9 17.9 6.2 28.2 8.4V424c0 11 9 20 20 20s20-9 20-20V410.2c8-1.7 16-4.5 23.2-9c14.3-8.9 25.1-24.1 24.8-45c-.3-20.3-11.7-33.4-24.6-41.6c-11.5-7.2-25.9-11.6-37.1-15l0 0-.7-.2c-12.8-3.9-21.9-6.7-28.3-10.5c-5.2-3.1-5.3-4.9-5.3-6.7c0-3.7 1.4-6.5 6.2-9.3c5.4-3.2 13.6-5.1 21.5-5c9.6 .1 20.2 2.2 31.2 5.2c10.7 2.8 21.6-3.5 24.5-14.2s-3.5-21.6-14.2-24.5c-6.5-1.7-13.7-3.4-21.1-4.7V216z"></path></svg>
+                  <div class="usp__item-title">Reduces<br>Electricity Bill</div>
+                  
+                </div>
+              
+                <div class="usp__item">
+                  
+                  <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M64 64c0-17.7-14.3-32-32-32S0 46.3 0 64V400c0 44.2 35.8 80 80 80H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H80c-8.8 0-16-7.2-16-16V64zm406.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L320 210.7l-57.4-57.4c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L240 221.3l57.4 57.4c12.5 12.5 32.8 12.5 45.3 0l128-128z"></path></svg>
+                  <div class="usp__item-title">Increases<br>Property Value</div>
+                  
+                </div>
+              
+                <div class="usp__item">
+                  
+                  <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M512 32c0 113.6-84.6 207.5-194.2 222c-7.1-53.4-30.6-101.6-65.3-139.3C290.8 46.3 364 0 448 0h32c17.7 0 32 14.3 32 32zM0 96C0 78.3 14.3 64 32 64H64c123.7 0 224 100.3 224 224v32V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V320C100.3 320 0 219.7 0 96z"></path></svg>
+                  <div class="usp__item-title">Environmentally<br>Friendly</div>
+                  
+                </div>
+              
+                <div class="usp__item">
+                  
+                  <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M384 352c-17.7 0-32 14.3-32 32s14.3 32 32 32H544c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32s-32 14.3-32 32v82.7L342.6 137.4c-12.5-12.5-32.8-12.5-45.3 0L192 242.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0L320 205.3 466.7 352H384z"></path></svg>
+                  <div class="usp__item-title">Increasingly<br>Affordable</div>
+                  
+                </div>
+              
+                <div class="usp__item">
+                  
+                  <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M320 64A64 64 0 1 0 192 64a64 64 0 1 0 128 0zm-96 96c-35.3 0-64 28.7-64 64v48c0 17.7 14.3 32 32 32h1.8l11.1 99.5c1.8 16.2 15.5 28.5 31.8 28.5h38.7c16.3 0 30-12.3 31.8-28.5L318.2 304H320c17.7 0 32-14.3 32-32V224c0-35.3-28.7-64-64-64H224zM132.3 394.2c13-2.4 21.7-14.9 19.3-27.9s-14.9-21.7-27.9-19.3c-32.4 5.9-60.9 14.2-82 24.8c-10.5 5.3-20.3 11.7-27.8 19.6C6.4 399.5 0 410.5 0 424c0 21.4 15.5 36.1 29.1 45c14.7 9.6 34.3 17.3 56.4 23.4C130.2 504.7 190.4 512 256 512s125.8-7.3 170.4-19.6c22.1-6.1 41.8-13.8 56.4-23.4c13.7-8.9 29.1-23.6 29.1-45c0-13.5-6.4-24.5-14-32.6c-7.5-7.9-17.3-14.3-27.8-19.6c-21-10.6-49.5-18.9-82-24.8c-13-2.4-25.5 6.3-27.9 19.3s6.3 25.5 19.3 27.9c30.2 5.5 53.7 12.8 69 20.5c3.2 1.6 5.8 3.1 7.9 4.5c3.6 2.4 3.6 7.2 0 9.6c-8.8 5.7-23.1 11.8-43 17.3C374.3 457 318.5 464 256 464s-118.3-7-157.7-17.9c-19.9-5.5-34.2-11.6-43-17.3c-3.6-2.4-3.6-7.2 0-9.6c2.1-1.4 4.8-2.9 7.9-4.5c15.3-7.7 38.8-14.9 69-20.5z"></path></svg>
+                  <div class="usp__item-title">Energy<br>Independence</div>
+                  
+                </div>
+              
+                <div class="usp__item">
+                  
+                  <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M352 320c88.4 0 160-71.6 160-160c0-15.3-2.2-30.1-6.2-44.2c-3.1-10.8-16.4-13.2-24.3-5.3l-76.8 76.8c-3 3-7.1 4.7-11.3 4.7H336c-8.8 0-16-7.2-16-16V118.6c0-4.2 1.7-8.3 4.7-11.3l76.8-76.8c7.9-7.9 5.4-21.2-5.3-24.3C382.1 2.2 367.3 0 352 0C263.6 0 192 71.6 192 160c0 19.1 3.4 37.5 9.5 54.5L19.9 396.1C7.2 408.8 0 426.1 0 444.1C0 481.6 30.4 512 67.9 512c18 0 35.3-7.2 48-19.9L297.5 310.5c17 6.2 35.4 9.5 54.5 9.5zM80 408a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"></path></svg>
+                  <div class="usp__item-title">Low<br>Maintenance</div>
+                  
+                </div>
+              
+          </div>
+          <a class="btn btn-dark" href="/services/#solar" aria-label="Link button to Find Out More">Find Out More</a>
+          
+        </div>
+      </div>
+    </usp-panel>
+
+    <!-- Quote -->
+    <quote-section>
+      <div class="quote has-bg-color ">
+        <div class="quote__wrapper page-wrapper">
+          <div class="quote__text">“We are like tenant farmers chopping down the fence around our house for fuel when we should be using more of nature’s inexhaustible source of energy - the sun.”</div>
+          <div class="quote__author">- Thomas Edison</div>
+        </div>
+      </div>
+    </quote-section>
+
+    <!-- EV Chargers -->
+    <featured-panel>
+      <div class="featured-panel img-left null dark marginDesktop marginMobile">
+        <div class="featured-panel__wrapper page-wrapper">
+          <div class="featured-panel__text-container">
+            <h2 class="featured-panel__title">EV Chargers</h2>
+              <p class="featured-panel__body-text">Discover the future of driving! Explore the innovation behind our range electric vehicle chargers – fast, efficient, and environmentally conscious. Elevate your driving experience now and embrace the green revolution.</p>
+
+            <div class="featured-panel__btn-container">
+              <a class="btn btn-dark" href="/services/ev-chargers" aria-label="Link button to Learn More">Learn More</a>
+              
+              </div>
+          </div>
+          <div class="featured-panel__img-container ">
+            <img src="/img/ev-chargers/ev-charger-pod-point.jpg" alt="EV charger with a car in the background" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </featured-panel>
+
+    <!-- Follow Our Instagram -->
+    <section class="instagram">
+      <div class="instagram__wrapper page-wrapper">
+          <h2 class="instagram__section-title">Follow Our Instagram</h2>
+          <div class="instagram__img-container">
+              <div class="instagram__img">
+                  <img src="/img/global/insta1.jpg" alt="Instagram image 1 of 4" loading="lazy">
+              </div>
+              <div class="instagram__img">
+                  <img src="/img/global/insta2.jpg" alt="Instagram image 2 of 4" loading="lazy">
+              </div>
+              <div class="instagram__img">
+                  <img src="/img/global/insta3.jpg" alt="Instagram image 3 of 4" loading="lazy">
+              </div>
+              <div class="instagram__img">
+                  <img src="/img/global/insta4.jpg" alt="Instagram image 4 of 4" loading="lazy">
+              </div>
+          </div>
+          <a href="https://www.instagram.com/apollori_co_uk/?igsh=OG96aXFrbHQ1MG55" class="btn btn-light" target="_blank">View Latest Projects</a>
+      </div>
+    </section>
+
+    <!-- SEO Section -->
+    <section class="seo__container">
+      <div class="seo__wrapper page-wrapper">
+        <h1>Apollo Renewable Installations | Apollo Solar Energy</h1>
+        <!-- <p>Our team at Apollo are experts in the installation, maintenance and repair of both residential and commercial Solar Panels, Battery Storage, EV Chargers and more.</p> -->
+      </div>
+    </section>
+
+    <!-- Infinite Accreditation Carousel -->
+    <infinite-carousel>
+      <style>
+        @keyframes slide {
+          from {
+            transform: translateX(0);
+          }
+          to {
+            transform: translateX(-100%);
+          }
+        }
+
+        .infinite-carousel__title {font-weight: 400; font-size: 16px; text-transform: uppercase; padding: 40px 0 0; margin: 0; background-color: var(--primary-background-light); text-align: center;}
+        .infinite-carousel__container {overflow: hidden; white-space: nowrap; display: flex; background-color: var(--primary-background-light);}
+        .infinite-carousel__img-wrapper {display: flex; align-items: center; margin: 40px 0; animation: 60s slide infinite linear; flex-shrink: 0; animation-delay: 3s;}
+        .infinite-carousel__img {padding: 0 20px; max-height: 80px;}
+        @media screen and (max-width:767px) {
+          .infinite-carousel__img {width: calc(100vw / 3); padding: 0 10px;}
+        }    
+      </style>
+
+    
+        <div class="infinite-carousel__title">Our Accreditations &amp; Associations</div>
+        <div class="infinite-carousel__container">
+          <div class="infinite-carousel__img-wrapper">
+              <img class="infinite-carousel__img" src="/img/global/accreditations/city-guilds.jpg" alt="City Guilds Logo">
+              <img class="infinite-carousel__img" src="/img/global/accreditations/renewable-energy-hub.jpg" alt="The Renewable Energy Hub">
+              <img class="infinite-carousel__img" src="/img/global/accreditations/canadian-solar.jpg" alt="Canadian Solar Logo">
+              <img class="infinite-carousel__img" src="/img/global/accreditations/givenergy.jpg" alt="Give Energy Logo">
+              <img class="infinite-carousel__img" src="/img/global/accreditations/napit.jpg" alt="Napit Logo">
+              <img class="infinite-carousel__img" src="/img/global/accreditations/site-safe.jpg" alt="Site Safe Logo">
+              <img class="infinite-carousel__img" src="/img/global/accreditations/solar-edge.jpg" alt="Solar Edge Logo">
+              <img class="infinite-carousel__img" src="/img/global/accreditations/solis.jpg" alt="Solis Logo">
+              <img class="infinite-carousel__img" src="/img/global/accreditations/tesla.jpg" alt="Tesla Logo">
+              <img class="infinite-carousel__img" src="/img/global/accreditations/jym.jpg" alt="JYM Roofing Logo">
+              </div>
+              <div class="infinite-carousel__img-wrapper">
+              <img class="infinite-carousel__img" src="/img/global/accreditations/city-guilds.jpg" alt="City Guilds Logo">
+              <img class="infinite-carousel__img" src="/img/global/accreditations/renewable-energy-hub.jpg" alt="The Renewable Energy Hub">
+              <img class="infinite-carousel__img" src="/img/global/accreditations/canadian-solar.jpg" alt="Canadian Solar Logo">
+              <img class="infinite-carousel__img" src="/img/global/accreditations/givenergy.jpg" alt="Give Energy Logo">
+              <img class="infinite-carousel__img" src="/img/global/accreditations/napit.jpg" alt="Napit Logo">
+              <img class="infinite-carousel__img" src="/img/global/accreditations/site-safe.jpg" alt="Site Safe Logo">
+              <img class="infinite-carousel__img" src="/img/global/accreditations/solar-edge.jpg" alt="Solar Edge Logo">
+              <img class="infinite-carousel__img" src="/img/global/accreditations/solis.jpg" alt="Solis Logo">
+              <img class="infinite-carousel__img" src="/img/global/accreditations/tesla.jpg" alt="Tesla Logo">
+              <img class="infinite-carousel__img" src="/img/global/accreditations/jym.jpg" alt="JYM Roofing Logo">
+          </div>
+        </div>
+    
+    </infinite-carousel>
+
+  </main>
+
+  <!-- Footer -->
+  <footer-nav>
+    <footer>
+      <div class="footer__wrapper page-wrapper">
+        <img class="footer__absolute-logo" src="/img/global/apollo_logo_background_decor_footer.png" alt="Apollo logo background decoration in footer navigation menu">
+        <div class="footer__left">
+          <div class="footer__left-col1">
+            <a class="footer__nav-link" href="/services">Services</a>
+            <a class="footer__nav-link" href="/pages/our-work">Our Work</a>
+            <a class="footer__nav-link" href="/pages/about">About Us</a>
+            <a class="footer__nav-link" href="/pages/contact">Contact</a>
+          </div>
+          <div class="footer__left-col2">
+            <a class="footer__nav-link" href="/policies/cookie-policy">Cookie Policy</a>
+            <a class="footer__nav-link" href="/policies/privacy-policy">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="footer__right">
+          <a class="footer__homepage-link" href="/">
+            <img src="/img/global/apollo_logo_dark_desktop.png" alt="Apollo Logo">
+          </a>
+          <div class="footer__contact">
+            <a class="footer__mob" href="tel:0800 129 9123">0800 129 9123</a>
+            <a class="footer__email" href="mailto:sales@apollori.co.uk">sales@apollori.co.uk</a>
+          </div>
+          <div class="footer__social-container">
+            <a class="footer__social-link" aria-label="Instagram" target="_blank" href="https://www.instagram.com/apollori_co_uk/?igsh=OG96aXFrbHQ1MG55">
+              <svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" width="40px" height="40px" aria-hidden="true" focusable="false" class="icon icon-instagram" viewBox="0 0 20 20">
+                <path fill="currentColor" fill-rule="evenodd" d="M13.23 3.492c-.84-.037-1.096-.046-3.23-.046-2.144 0-2.39.01-3.238.055-.776.027-1.195.164-1.487.273a2.43 2.43 0 0 0-.912.593 2.486 2.486 0 0 0-.602.922c-.11.282-.238.702-.274 1.486-.046.84-.046 1.095-.046 3.23 0 2.134.01 2.39.046 3.229.004.51.097 1.016.274 1.495.145.365.319.639.602.913.282.282.538.456.92.602.474.176.974.268 1.479.273.848.046 1.103.046 3.238.046 2.134 0 2.39-.01 3.23-.046.784-.036 1.203-.164 1.486-.273.374-.146.648-.329.921-.602.283-.283.447-.548.602-.922.177-.476.27-.979.274-1.486.037-.84.046-1.095.046-3.23 0-2.134-.01-2.39-.055-3.229-.027-.784-.164-1.204-.274-1.495a2.43 2.43 0 0 0-.593-.913 2.604 2.604 0 0 0-.92-.602c-.284-.11-.703-.237-1.488-.273ZM6.697 2.05c.857-.036 1.131-.045 3.302-.045 1.1-.014 2.202.001 3.302.045.664.014 1.321.14 1.943.374a3.968 3.968 0 0 1 1.414.922c.41.397.728.88.93 1.414.23.622.354 1.279.365 1.942C18 7.56 18 7.824 18 10.005c0 2.17-.01 2.444-.046 3.292-.036.858-.173 1.442-.374 1.943-.2.53-.474.976-.92 1.423a3.896 3.896 0 0 1-1.415.922c-.51.191-1.095.337-1.943.374-.857.036-1.122.045-3.302.045-2.171 0-2.445-.009-3.302-.055-.849-.027-1.432-.164-1.943-.364a4.152 4.152 0 0 1-1.414-.922 4.128 4.128 0 0 1-.93-1.423c-.183-.51-.329-1.085-.365-1.943C2.009 12.45 2 12.167 2 10.004c0-2.161 0-2.435.055-3.302.027-.848.164-1.432.365-1.942a4.44 4.44 0 0 1 .92-1.414 4.18 4.18 0 0 1 1.415-.93c.51-.183 1.094-.33 1.943-.366Zm.427 4.806a4.105 4.105 0 1 1 5.805 5.805 4.105 4.105 0 0 1-5.805-5.805Zm1.882 5.371a2.668 2.668 0 1 0 2.042-4.93 2.668 2.668 0 0 0-2.042 4.93Zm5.922-5.942a.958.958 0 1 1-1.355-1.355.958.958 0 0 1 1.355 1.355Z" clip-rule="evenodd"></path>
+              </svg>
+            </a>
+            <a class="footer__social-link" aria-label="Facebook" target="_blank" href="https://www.facebook.com/apollorenewableinstallations">
+              <svg xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" width="40px" height="40px" aria-hidden="true" focusable="false" class="icon icon-facebook" viewBox="0 0 20 20">
+                <path fill="currentColor" d="M18 10.049C18 5.603 14.419 2 10 2c-4.419 0-8 3.603-8 8.049C2 14.067 4.925 17.396 8.75 18v-5.624H6.719v-2.328h2.03V8.275c0-2.017 1.195-3.132 3.023-3.132.874 0 1.79.158 1.79.158v1.98h-1.009c-.994 0-1.303.621-1.303 1.258v1.51h2.219l-.355 2.326H11.25V18c3.825-.604 6.75-3.933 6.75-7.951Z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </footer-nav>
+
+  <script>
+    // Hero Splide
+    var splide = new Splide( '#hero-splide' , {
+      type: 'fade',
+      perPage: 1,
+      arrows:false,
+      pagination:false,
+      autoplay:true, 
+      pauseOnFocus:false,
+      pauseOnHover:false, 
+      interval: 7000,
+      speed: 3000,
+      rewind: true,
+      preloadPages: 1,
+    } ).mount();
+  </script>
 </body>
 </html>

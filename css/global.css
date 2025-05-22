@@ -344,6 +344,8 @@ header {display: flex; flex-direction: column; width: 100%; height: 138px; backg
 .quote.has-bg-color-dark {background-color: var(--primary-background-dark);}
 .quote.has-bg-color-dark .quote__text {color: var(--primary-light-text);}
 .quote__text {width: 100%; text-align: center; font-size: var(--quote-text); font-weight: var(--light-weight); color: var(--primary-dark-text); margin-bottom: 15px; line-height: 1.4;}
+.quote__author-name {width: 100%; text-align: center; font-size: 16px; font-weight: 300; margin-bottom: 4px;}
+.quote.has-bg-color-dark .quote__author-name {color: #FFFFFF;}
 .quote__author {width: 100%; text-align: center; font-size: var(--author-text); font-weight: var(--bold-weight); color: var(--secondary-text);}
 
 @media only screen and (max-width: 1024px) {
